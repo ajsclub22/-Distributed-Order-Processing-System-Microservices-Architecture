@@ -1,87 +1,397 @@
-2025-05-27T18:59:14.929+05:30  INFO 6284 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : Starting EurekaServerApplication using Java 24 with PID 6284 (D:\SB\Microservice\Ordering_System\eureka-server\eureka-server\target\classes started by admin_sirius in D:\SB\Microservice\Ordering_System\eureka-server\eureka-server)
-2025-05-27T18:59:14.933+05:30 DEBUG 6284 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : Running with Spring Boot v3.5.0, Spring v6.2.7
-2025-05-27T18:59:14.934+05:30  INFO 6284 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : No active profile set, falling back to 1 default profile: "default"
-2025-05-27T18:59:16.556+05:30  INFO 6284 --- [EUREKA_SERVER] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=466c9d9a-5447-3185-92dd-c126b285e2ee
-2025-05-27T18:59:16.975+05:30  INFO 20580 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : Starting EurekaServerApplication using Java 24 with PID 20580 (D:\SB\Microservice\Ordering_System\eureka-server\eureka-server\target\classes started by admin_sirius in D:\SB\Microservice\Ordering_System\eureka-server\eureka-server)
-2025-05-27T18:59:16.979+05:30 DEBUG 20580 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : Running with Spring Boot v3.5.0, Spring v6.2.7
-2025-05-27T18:59:16.981+05:30  INFO 20580 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : No active profile set, falling back to 1 default profile: "default"
-2025-05-27T18:59:17.095+05:30  INFO 6284 --- [EUREKA_SERVER] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
-2025-05-27T18:59:17.125+05:30  INFO 6284 --- [EUREKA_SERVER] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-27T18:59:17.126+05:30  INFO 6284 --- [EUREKA_SERVER] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-05-27T18:59:17.210+05:30  INFO 6284 --- [EUREKA_SERVER] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-27T18:59:17.210+05:30  INFO 6284 --- [EUREKA_SERVER] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2214 ms
-2025-05-27T18:59:17.838+05:30 DEBUG 6284 --- [EUREKA_SERVER] [main] .c.n.e.s.EurekaServerAutoConfiguration$1 : Filter 'eurekaVersionFilterRegistration' configured for use
-2025-05-27T18:59:18.418+05:30  INFO 6284 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2025-05-27T18:59:18.419+05:30  INFO 6284 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2025-05-27T18:59:18.520+05:30  INFO 20580 --- [EUREKA_SERVER] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=466c9d9a-5447-3185-92dd-c126b285e2ee
-2025-05-27T18:59:18.719+05:30  INFO 6284 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2025-05-27T18:59:18.720+05:30  INFO 6284 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2025-05-27T18:59:19.032+05:30  INFO 6284 --- [EUREKA_SERVER] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2025-05-27T18:59:19.057+05:30  INFO 20580 --- [EUREKA_SERVER] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
-2025-05-27T18:59:19.074+05:30  INFO 20580 --- [EUREKA_SERVER] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-27T18:59:19.074+05:30  INFO 20580 --- [EUREKA_SERVER] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-05-27T18:59:19.153+05:30  INFO 20580 --- [EUREKA_SERVER] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-27T18:59:19.153+05:30  INFO 20580 --- [EUREKA_SERVER] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2093 ms
-2025-05-27T18:59:19.469+05:30 DEBUG 6284 --- [EUREKA_SERVER] [main] .n.e.m.DefaultManagementMetadataProvider : Constructed eureka meta-data healthcheckUrl: http://DESKTOP-LA2D2ND:8761/actuator/health
-2025-05-27T18:59:19.469+05:30 DEBUG 6284 --- [EUREKA_SERVER] [main] .n.e.m.DefaultManagementMetadataProvider : Constructed eureka meta-data statusPageUrl: http://DESKTOP-LA2D2ND:8761/actuator/info
-2025-05-27T18:59:19.794+05:30 DEBUG 20580 --- [EUREKA_SERVER] [main] .c.n.e.s.EurekaServerAutoConfiguration$1 : Filter 'eurekaVersionFilterRegistration' configured for use
-2025-05-27T18:59:19.985+05:30  WARN 6284 --- [EUREKA_SERVER] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-05-27T18:59:20.010+05:30  INFO 6284 --- [EUREKA_SERVER] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2025-05-27T18:59:20.033+05:30  INFO 6284 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2025-05-27T18:59:20.034+05:30  INFO 6284 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
-2025-05-27T18:59:20.036+05:30  INFO 6284 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1748352560035 with initial instances count: 0
-2025-05-27T18:59:20.080+05:30  INFO 6284 --- [EUREKA_SERVER] [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
-2025-05-27T18:59:20.081+05:30 DEBUG 6284 --- [EUREKA_SERVER] [main] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
-2025-05-27T18:59:20.081+05:30  INFO 6284 --- [EUREKA_SERVER] [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
-2025-05-27T18:59:20.225+05:30  INFO 6284 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2025-05-27T18:59:20.226+05:30  INFO 6284 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2025-05-27T18:59:20.226+05:30  INFO 6284 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2025-05-27T18:59:20.226+05:30  INFO 6284 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2025-05-27T18:59:20.272+05:30  INFO 6284 --- [EUREKA_SERVER] [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
-2025-05-27T18:59:20.280+05:30  INFO 6284 --- [EUREKA_SERVER] [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
-2025-05-27T18:59:20.281+05:30  INFO 6284 --- [EUREKA_SERVER] [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
-2025-05-27T18:59:20.303+05:30  INFO 6284 --- [EUREKA_SERVER] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2025-05-27T18:59:20.375+05:30  INFO 20580 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2025-05-27T18:59:20.377+05:30  INFO 20580 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2025-05-27T18:59:20.380+05:30  INFO 6284 --- [EUREKA_SERVER] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA_SERVER with eureka with status UP
-2025-05-27T18:59:20.406+05:30  INFO 6284 --- [EUREKA_SERVER] [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
-2025-05-27T18:59:20.407+05:30  INFO 6284 --- [EUREKA_SERVER] [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
-2025-05-27T18:59:20.407+05:30  INFO 6284 --- [EUREKA_SERVER] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
-2025-05-27T18:59:20.407+05:30  INFO 6284 --- [EUREKA_SERVER] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
-2025-05-27T18:59:20.408+05:30  INFO 6284 --- [EUREKA_SERVER] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
-2025-05-27T18:59:20.411+05:30  INFO 6284 --- [EUREKA_SERVER] [Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
-2025-05-27T18:59:20.417+05:30  INFO 6284 --- [EUREKA_SERVER] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path '/'
-2025-05-27T18:59:20.419+05:30  INFO 6284 --- [EUREKA_SERVER] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
-2025-05-27T18:59:20.451+05:30  INFO 6284 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : Started EurekaServerApplication in 6.166 seconds (process running for 6.78)
-2025-05-27T18:59:20.706+05:30  INFO 20580 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2025-05-27T18:59:20.707+05:30  INFO 20580 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2025-05-27T18:59:20.962+05:30  INFO 20580 --- [EUREKA_SERVER] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2025-05-27T18:59:21.288+05:30 DEBUG 20580 --- [EUREKA_SERVER] [main] .n.e.m.DefaultManagementMetadataProvider : Constructed eureka meta-data healthcheckUrl: http://DESKTOP-LA2D2ND:8761/actuator/health
-2025-05-27T18:59:21.288+05:30 DEBUG 20580 --- [EUREKA_SERVER] [main] .n.e.m.DefaultManagementMetadataProvider : Constructed eureka meta-data statusPageUrl: http://DESKTOP-LA2D2ND:8761/actuator/info
-2025-05-27T18:59:21.651+05:30  WARN 20580 --- [EUREKA_SERVER] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-05-27T18:59:21.674+05:30  INFO 20580 --- [EUREKA_SERVER] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2025-05-27T18:59:21.693+05:30  INFO 20580 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2025-05-27T18:59:21.693+05:30  INFO 20580 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
-2025-05-27T18:59:21.696+05:30  INFO 20580 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1748352561695 with initial instances count: 0
-2025-05-27T18:59:21.726+05:30  INFO 20580 --- [EUREKA_SERVER] [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
-2025-05-27T18:59:21.727+05:30 DEBUG 20580 --- [EUREKA_SERVER] [main] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
-2025-05-27T18:59:21.727+05:30  INFO 20580 --- [EUREKA_SERVER] [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
-2025-05-27T18:59:21.811+05:30  INFO 20580 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2025-05-27T18:59:21.812+05:30  INFO 20580 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2025-05-27T18:59:21.812+05:30  INFO 20580 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2025-05-27T18:59:21.812+05:30  INFO 20580 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2025-05-27T18:59:21.841+05:30  INFO 20580 --- [EUREKA_SERVER] [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
-2025-05-27T18:59:21.846+05:30  INFO 20580 --- [EUREKA_SERVER] [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
-2025-05-27T18:59:21.847+05:30  INFO 20580 --- [EUREKA_SERVER] [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
-2025-05-27T18:59:21.863+05:30  INFO 20580 --- [EUREKA_SERVER] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2025-05-27T18:59:21.983+05:30  INFO 20580 --- [EUREKA_SERVER] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA_SERVER with eureka with status UP
-2025-05-27T18:59:21.997+05:30  INFO 20580 --- [EUREKA_SERVER] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EUREKA_SERVER with eureka with status DOWN
-2025-05-27T18:59:21.998+05:30  WARN 20580 --- [EUREKA_SERVER] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2025-05-27T18:59:21.998+05:30  INFO 20580 --- [EUREKA_SERVER] [main] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
-2025-05-27T18:59:22.002+05:30  INFO 20580 --- [EUREKA_SERVER] [main] c.n.eureka.DefaultEurekaServerContext    : Shut down
-2025-05-27T18:59:22.006+05:30  INFO 20580 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2025-05-27T18:59:22.007+05:30  INFO 20580 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
-2025-05-27T18:59:21.999+05:30 ERROR 20580 --- [EUREKA_SERVER] [Eureka-Jersey3Client-Conn-Cleaner2] c.n.d.s.t.j.EurekaJersey3ClientImpl      : Cannot clean connections
+2025-05-29T08:50:41.075+05:30  INFO 31928 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : Starting EurekaServerApplication using Java 24 with PID 31928 (D:\SB\Microservice\Ordering_System\eureka-server\eureka-server\target\classes started by admin_sirius in D:\SB\Microservice\Ordering_System\eureka-server\eureka-server)
+2025-05-29T08:50:41.086+05:30 DEBUG 31928 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-05-29T08:50:41.088+05:30  INFO 31928 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-05-29T08:50:42.681+05:30  INFO 31928 --- [EUREKA_SERVER] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=466c9d9a-5447-3185-92dd-c126b285e2ee
+2025-05-29T08:50:43.214+05:30  INFO 31928 --- [EUREKA_SERVER] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+2025-05-29T08:50:43.234+05:30  INFO 31928 --- [EUREKA_SERVER] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-29T08:50:43.234+05:30  INFO 31928 --- [EUREKA_SERVER] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-05-29T08:50:43.319+05:30  INFO 31928 --- [EUREKA_SERVER] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-29T08:50:43.320+05:30  INFO 31928 --- [EUREKA_SERVER] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2146 ms
+2025-05-29T08:50:43.954+05:30 DEBUG 31928 --- [EUREKA_SERVER] [main] .c.n.e.s.EurekaServerAutoConfiguration$1 : Filter 'eurekaVersionFilterRegistration' configured for use
+2025-05-29T08:50:44.604+05:30  INFO 31928 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2025-05-29T08:50:44.606+05:30  INFO 31928 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2025-05-29T08:50:44.947+05:30  INFO 31928 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2025-05-29T08:50:44.948+05:30  INFO 31928 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2025-05-29T08:50:45.223+05:30  INFO 31928 --- [EUREKA_SERVER] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-29T08:50:46.650+05:30  INFO 31928 --- [EUREKA_SERVER] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-05-29T08:50:46.679+05:30 DEBUG 31928 --- [EUREKA_SERVER] [main] .n.e.m.DefaultManagementMetadataProvider : Constructed eureka meta-data healthcheckUrl: http://localhost:8761/actuator/health
+2025-05-29T08:50:46.680+05:30 DEBUG 31928 --- [EUREKA_SERVER] [main] .n.e.m.DefaultManagementMetadataProvider : Constructed eureka meta-data statusPageUrl: http://localhost:8761/actuator/info
+2025-05-29T08:50:48.041+05:30  INFO 31928 --- [EUREKA_SERVER] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-05-29T08:50:48.100+05:30  WARN 31928 --- [EUREKA_SERVER] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-29T08:50:48.122+05:30  INFO 31928 --- [EUREKA_SERVER] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-29T08:50:48.148+05:30  INFO 31928 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-29T08:50:48.149+05:30  INFO 31928 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2025-05-29T08:50:48.151+05:30  INFO 31928 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1748488848150 with initial instances count: 0
+2025-05-29T08:50:48.207+05:30  INFO 31928 --- [EUREKA_SERVER] [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2025-05-29T08:50:48.209+05:30 DEBUG 31928 --- [EUREKA_SERVER] [main] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
+2025-05-29T08:50:48.209+05:30  WARN 31928 --- [EUREKA_SERVER] [main] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2025-05-29T08:50:48.218+05:30  INFO 31928 --- [EUREKA_SERVER] [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2025-05-29T08:50:48.218+05:30  INFO 31928 --- [EUREKA_SERVER] [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2025-05-29T08:50:48.233+05:30  INFO 31928 --- [EUREKA_SERVER] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-05-29T08:50:48.336+05:30  INFO 31928 --- [EUREKA_SERVER] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA_SERVER with eureka with status UP
+2025-05-29T08:50:48.361+05:30  INFO 31928 --- [EUREKA_SERVER] [Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2025-05-29T08:50:48.361+05:30  INFO 31928 --- [EUREKA_SERVER] [Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2025-05-29T08:50:48.362+05:30  INFO 31928 --- [EUREKA_SERVER] [Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2025-05-29T08:50:48.362+05:30  INFO 31928 --- [EUREKA_SERVER] [Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2025-05-29T08:50:48.362+05:30  INFO 31928 --- [EUREKA_SERVER] [Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2025-05-29T08:50:48.368+05:30  INFO 31928 --- [EUREKA_SERVER] [Thread-10] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2025-05-29T08:50:48.377+05:30  INFO 31928 --- [EUREKA_SERVER] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path '/'
+2025-05-29T08:50:48.378+05:30  INFO 31928 --- [EUREKA_SERVER] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2025-05-29T08:50:49.397+05:30  INFO 31928 --- [EUREKA_SERVER] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-05-29T08:50:49.417+05:30  INFO 31928 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : Started EurekaServerApplication in 10.166 seconds (process running for 16.025)
+2025-05-29T08:51:35.938+05:30  INFO 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-29T08:51:35.938+05:30  INFO 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-29T08:51:35.939+05:30  INFO 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-29T08:51:36.199+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
+2025-05-29T08:51:36.199+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
+2025-05-29T08:51:36.210+05:30  INFO 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PRODUCT-SERVICE/localhost:PRODUCT-SERVICE:8082 with status UP (replication=false)
+2025-05-29T08:51:36.212+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : registered PRODUCT-SERVICE, vip PRODUCT-SERVICE, leaseDuration 90, isReplication false
+2025-05-29T08:51:48.365+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-29T08:52:06.097+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T08:52:36.134+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T08:52:48.367+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-29T08:53:06.153+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T08:53:36.166+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T08:53:48.367+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-29T08:54:06.183+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T08:54:29.867+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-3] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
+2025-05-29T08:54:29.867+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-3] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
+2025-05-29T08:54:29.867+05:30  INFO 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/localhost:ORDER-SERVICE:8081 with status UP (replication=false)
+2025-05-29T08:54:29.867+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : registered ORDER-SERVICE, vip ORDER-SERVICE, leaseDuration 90, isReplication false
+2025-05-29T08:54:36.195+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T08:54:48.368+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-29T08:54:59.822+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T08:55:06.230+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T08:55:29.838+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T08:55:36.244+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T08:55:48.378+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-29T08:55:59.850+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T08:56:06.254+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T08:56:24.631+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-9] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
+2025-05-29T08:56:24.631+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-9] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
+2025-05-29T08:56:24.632+05:30  INFO 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/localhost:ORDER-SERVICE:8081 with status DOWN (replication=false)
+2025-05-29T08:56:24.632+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : registered ORDER-SERVICE, vip ORDER-SERVICE, leaseDuration 90, isReplication false
+2025-05-29T08:56:27.688+05:30  INFO 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance ORDER-SERVICE/localhost:ORDER-SERVICE:8081 (replication=false)
+2025-05-29T08:56:27.688+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : cancelled ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T08:56:27.689+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : cancelled ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T08:56:36.265+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T08:56:48.378+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-29T08:57:06.276+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T08:57:36.289+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T08:57:48.379+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-29T08:58:01.548+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
+2025-05-29T08:58:01.548+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
+2025-05-29T08:58:01.548+05:30  INFO 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/localhost:ORDER-SERVICE:8081 with status UP (replication=false)
+2025-05-29T08:58:01.549+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : registered ORDER-SERVICE, vip ORDER-SERVICE, leaseDuration 90, isReplication false
+2025-05-29T08:58:06.303+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T08:58:31.489+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T08:58:36.325+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T08:58:48.389+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2025-05-29T08:59:01.499+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T08:59:06.345+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T08:59:31.514+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T08:59:36.358+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T08:59:48.397+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-29T09:00:01.527+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:00:06.369+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:00:31.538+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:00:36.391+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:00:48.219+05:30 DEBUG 31928 --- [EUREKA_SERVER] [Eureka-PeerNodesUpdater] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
+2025-05-29T09:00:48.220+05:30  WARN 31928 --- [EUREKA_SERVER] [Eureka-PeerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2025-05-29T09:00:48.405+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-29T09:01:01.571+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:01:06.430+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:01:31.604+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:01:36.453+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:01:48.417+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 11ms
+2025-05-29T09:02:01.620+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:02:06.475+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:02:31.633+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:02:36.484+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:02:48.417+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-29T09:03:01.646+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:03:06.493+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:03:31.658+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:03:36.503+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:03:48.417+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-29T09:04:01.669+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:04:06.514+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:04:31.682+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:04:36.522+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:04:48.417+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-29T09:04:48.934+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-6] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
+2025-05-29T09:04:48.935+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-6] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
+2025-05-29T09:04:48.936+05:30  INFO 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/localhost:ORDER-SERVICE:8081 with status DOWN (replication=false)
+2025-05-29T09:04:48.937+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : registered ORDER-SERVICE, vip ORDER-SERVICE, leaseDuration 90, isReplication false
+2025-05-29T09:04:51.992+05:30  INFO 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance ORDER-SERVICE/localhost:ORDER-SERVICE:8081 (replication=false)
+2025-05-29T09:04:51.992+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : cancelled ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:04:51.992+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : cancelled ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:05:06.269+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-9] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
+2025-05-29T09:05:06.270+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-9] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
+2025-05-29T09:05:06.270+05:30  INFO 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/localhost:ORDER-SERVICE:8081 with status UP (replication=false)
+2025-05-29T09:05:06.270+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : registered ORDER-SERVICE, vip ORDER-SERVICE, leaseDuration 90, isReplication false
+2025-05-29T09:05:06.532+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:05:36.212+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:05:36.543+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:05:48.225+05:30  INFO 31928 --- [EUREKA_SERVER] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 5
+2025-05-29T09:05:48.423+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-29T09:06:06.222+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:06:06.565+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:06:36.248+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:06:36.598+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:06:48.424+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-29T09:07:06.275+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:07:06.626+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:07:36.302+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:07:36.669+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:07:48.432+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-05-29T09:08:06.322+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:08:06.681+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:08:25.099+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-1] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
+2025-05-29T09:08:25.099+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-1] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
+2025-05-29T09:08:25.100+05:30  INFO 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/localhost:ORDER-SERVICE:8081 with status DOWN (replication=false)
+2025-05-29T09:08:25.100+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : registered ORDER-SERVICE, vip ORDER-SERVICE, leaseDuration 90, isReplication false
+2025-05-29T09:08:28.157+05:30  INFO 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance ORDER-SERVICE/localhost:ORDER-SERVICE:8081 (replication=false)
+2025-05-29T09:08:28.157+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : cancelled ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:08:28.158+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : cancelled ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:08:36.689+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:08:48.434+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-29T09:08:49.193+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-4] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
+2025-05-29T09:08:49.194+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-4] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
+2025-05-29T09:08:49.194+05:30  INFO 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/localhost:ORDER-SERVICE:8081 with status UP (replication=false)
+2025-05-29T09:08:49.195+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : registered ORDER-SERVICE, vip ORDER-SERVICE, leaseDuration 90, isReplication false
+2025-05-29T09:09:06.703+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:09:19.131+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:09:36.735+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:09:48.435+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-29T09:09:49.145+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:10:06.765+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:10:19.166+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:10:36.786+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:10:48.234+05:30 DEBUG 31928 --- [EUREKA_SERVER] [Eureka-PeerNodesUpdater] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
+2025-05-29T09:10:48.235+05:30  WARN 31928 --- [EUREKA_SERVER] [Eureka-PeerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2025-05-29T09:10:48.439+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2025-05-29T09:10:49.179+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:11:06.799+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:11:19.193+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:11:36.823+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:11:48.441+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2025-05-29T09:11:49.206+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:12:06.838+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:12:19.217+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:12:36.846+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:12:48.447+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2025-05-29T09:12:49.229+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:13:06.872+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:13:19.260+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:13:36.899+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:13:48.447+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-29T09:13:49.289+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:14:06.938+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:14:19.315+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:14:36.965+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:14:48.457+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-05-29T09:14:49.340+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:15:06.976+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:15:19.353+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:15:36.987+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:15:48.457+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-29T09:15:49.362+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:16:06.997+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:16:19.375+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:16:37.009+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:16:48.458+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-29T09:16:49.388+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:17:07.039+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:17:19.398+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:17:37.048+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:17:48.459+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-29T09:17:49.406+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:18:07.056+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:18:19.414+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:18:37.067+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:18:48.460+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-29T09:18:49.425+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:19:07.077+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:19:19.438+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:19:37.088+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:22:04.044+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 135584ms
+2025-05-29T09:22:05.035+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:22:22.679+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:22:35.045+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:22:52.688+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:23:03.815+05:30  INFO 31928 --- [EUREKA_SERVER] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 5
+2025-05-29T09:23:03.817+05:30 DEBUG 31928 --- [EUREKA_SERVER] [Eureka-PeerNodesUpdater] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
+2025-05-29T09:23:03.817+05:30  WARN 31928 --- [EUREKA_SERVER] [Eureka-PeerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2025-05-29T09:23:04.045+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-29T09:23:05.055+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:23:22.697+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:23:35.066+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:23:52.704+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:24:04.045+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-29T09:24:05.073+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:24:22.716+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:24:35.082+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:24:40.613+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-9] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
+2025-05-29T09:24:40.613+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-9] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
+2025-05-29T09:24:40.614+05:30  INFO 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PRODUCT-SERVICE/localhost:PRODUCT-SERVICE:8082 with status DOWN (replication=false)
+2025-05-29T09:24:40.614+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : registered PRODUCT-SERVICE, vip PRODUCT-SERVICE, leaseDuration 90, isReplication false
+2025-05-29T09:24:43.680+05:30  INFO 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance PRODUCT-SERVICE/localhost:PRODUCT-SERVICE:8082 (replication=false)
+2025-05-29T09:24:43.681+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : cancelled PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:24:43.681+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : cancelled PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:25:04.046+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-29T09:25:05.090+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:25:35.100+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:25:49.869+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-10] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
+2025-05-29T09:25:49.869+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-10] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
+2025-05-29T09:25:49.869+05:30  INFO 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PRODUCT-SERVICE/localhost:PRODUCT-SERVICE:8082 with status UP (replication=false)
+2025-05-29T09:25:49.869+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : registered PRODUCT-SERVICE, vip PRODUCT-SERVICE, leaseDuration 90, isReplication false
+2025-05-29T09:26:04.054+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-29T09:26:05.118+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:26:19.832+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:26:35.143+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:26:49.841+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:27:02.244+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-1] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
+2025-05-29T09:27:02.244+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-1] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
+2025-05-29T09:27:02.244+05:30  INFO 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PRODUCT-SERVICE/localhost:PRODUCT-SERVICE:8082 with status DOWN (replication=false)
+2025-05-29T09:27:02.246+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : registered PRODUCT-SERVICE, vip PRODUCT-SERVICE, leaseDuration 90, isReplication false
+2025-05-29T09:27:04.061+05:30  INFO 31928 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-05-29T09:27:05.158+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
+2025-05-29T09:27:05.308+05:30  INFO 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance PRODUCT-SERVICE/localhost:PRODUCT-SERVICE:8082 (replication=false)
+2025-05-29T09:27:05.309+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : cancelled PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:27:05.309+05:30 DEBUG 31928 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : cancelled PRODUCT-SERVICE, serverId localhost:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T09:27:08.619+05:30  INFO 31928 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EUREKA_SERVER with eureka with status DOWN
+2025-05-29T09:27:08.628+05:30  INFO 31928 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-29T09:27:08.661+05:30  INFO 31928 --- [EUREKA_SERVER] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-29T09:27:08.665+05:30  INFO 31928 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2025-05-29T09:27:08.665+05:30  INFO 31928 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2025-05-29T09:27:08.666+05:30  INFO 31928 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2025-05-29T09:27:08.666+05:30  INFO 31928 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2025-05-29T09:27:08.667+05:30  INFO 31928 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2025-05-29T09:27:08.667+05:30  INFO 31928 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2025-05-29T09:27:08.675+05:30  INFO 31928 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-05-29T09:27:08.676+05:30  INFO 31928 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-05-29T09:55:55.678+05:30  INFO 3996 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : Starting EurekaServerApplication using Java 24 with PID 3996 (D:\SB\Microservice\Ordering_System\eureka-server\eureka-server\target\classes started by admin_sirius in D:\SB\Microservice\Ordering_System\eureka-server\eureka-server)
+2025-05-29T09:55:55.683+05:30 DEBUG 3996 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-05-29T09:55:55.684+05:30  INFO 3996 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-05-29T09:55:57.205+05:30  INFO 3996 --- [EUREKA_SERVER] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=466c9d9a-5447-3185-92dd-c126b285e2ee
+2025-05-29T09:55:57.758+05:30  INFO 3996 --- [EUREKA_SERVER] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+2025-05-29T09:55:57.776+05:30  INFO 3996 --- [EUREKA_SERVER] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-29T09:55:57.777+05:30  INFO 3996 --- [EUREKA_SERVER] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-05-29T09:55:57.844+05:30  INFO 3996 --- [EUREKA_SERVER] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-29T09:55:57.844+05:30  INFO 3996 --- [EUREKA_SERVER] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2094 ms
+2025-05-29T09:55:58.457+05:30 DEBUG 3996 --- [EUREKA_SERVER] [main] .c.n.e.s.EurekaServerAutoConfiguration$1 : Filter 'eurekaVersionFilterRegistration' configured for use
+2025-05-29T09:55:59.052+05:30  INFO 3996 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2025-05-29T09:55:59.053+05:30  INFO 3996 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2025-05-29T09:55:59.398+05:30  INFO 3996 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2025-05-29T09:55:59.398+05:30  INFO 3996 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2025-05-29T09:55:59.695+05:30  INFO 3996 --- [EUREKA_SERVER] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-29T09:56:00.202+05:30 DEBUG 3996 --- [EUREKA_SERVER] [main] .n.e.m.DefaultManagementMetadataProvider : Constructed eureka meta-data healthcheckUrl: http://DESKTOP-LA2D2ND:8761/actuator/health
+2025-05-29T09:56:00.203+05:30 DEBUG 3996 --- [EUREKA_SERVER] [main] .n.e.m.DefaultManagementMetadataProvider : Constructed eureka meta-data statusPageUrl: http://DESKTOP-LA2D2ND:8761/actuator/info
+2025-05-29T09:56:00.740+05:30  WARN 3996 --- [EUREKA_SERVER] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-29T09:56:00.771+05:30  INFO 3996 --- [EUREKA_SERVER] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-29T09:56:00.793+05:30  INFO 3996 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-29T09:56:00.793+05:30  INFO 3996 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2025-05-29T09:56:00.796+05:30  INFO 3996 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1748492760794 with initial instances count: 0
+2025-05-29T09:56:00.829+05:30  INFO 3996 --- [EUREKA_SERVER] [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2025-05-29T09:56:00.830+05:30 DEBUG 3996 --- [EUREKA_SERVER] [main] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
+2025-05-29T09:56:00.831+05:30  INFO 3996 --- [EUREKA_SERVER] [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2025-05-29T09:56:00.937+05:30  INFO 3996 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2025-05-29T09:56:00.938+05:30  INFO 3996 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2025-05-29T09:56:00.938+05:30  INFO 3996 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2025-05-29T09:56:00.938+05:30  INFO 3996 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2025-05-29T09:56:01.000+05:30  INFO 3996 --- [EUREKA_SERVER] [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2025-05-29T09:56:01.012+05:30  INFO 3996 --- [EUREKA_SERVER] [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2025-05-29T09:56:01.012+05:30  INFO 3996 --- [EUREKA_SERVER] [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2025-05-29T09:56:01.060+05:30  INFO 3996 --- [EUREKA_SERVER] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-05-29T09:56:01.193+05:30  INFO 3996 --- [EUREKA_SERVER] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA_SERVER with eureka with status UP
+2025-05-29T09:56:01.233+05:30  INFO 3996 --- [EUREKA_SERVER] [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2025-05-29T09:56:01.234+05:30  INFO 3996 --- [EUREKA_SERVER] [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2025-05-29T09:56:01.235+05:30  INFO 3996 --- [EUREKA_SERVER] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2025-05-29T09:56:01.235+05:30  INFO 3996 --- [EUREKA_SERVER] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2025-05-29T09:56:01.236+05:30  INFO 3996 --- [EUREKA_SERVER] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2025-05-29T09:56:01.241+05:30  INFO 3996 --- [EUREKA_SERVER] [Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2025-05-29T09:56:01.255+05:30  INFO 3996 --- [EUREKA_SERVER] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path '/'
+2025-05-29T09:56:01.256+05:30  INFO 3996 --- [EUREKA_SERVER] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2025-05-29T09:56:01.295+05:30  INFO 3996 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : Started EurekaServerApplication in 6.268 seconds (process running for 11.171)
+2025-05-29T09:57:01.242+05:30  INFO 3996 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-29T09:58:01.242+05:30  INFO 3996 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-29T09:59:01.242+05:30  INFO 3996 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-29T10:00:01.243+05:30  INFO 3996 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-29T10:01:01.243+05:30  INFO 3996 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-29T10:02:01.243+05:30  INFO 3996 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-29T10:03:01.244+05:30  INFO 3996 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-29T10:04:01.245+05:30  INFO 3996 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2025-05-29T10:04:42.172+05:30  INFO 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-29T10:04:42.173+05:30  INFO 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-29T10:04:42.175+05:30  INFO 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-29T10:04:42.676+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
+2025-05-29T10:04:42.677+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
+2025-05-29T10:04:42.699+05:30  INFO 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PRODUCT-SERVICE/DESKTOP-LA2D2ND:PRODUCT-SERVICE:8082 with status UP (replication=false)
+2025-05-29T10:04:42.705+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : registered PRODUCT-SERVICE, vip PRODUCT-SERVICE, leaseDuration 90, isReplication false
+2025-05-29T10:04:43.375+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-3] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 1
+2025-05-29T10:04:43.375+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-3] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
+2025-05-29T10:04:43.376+05:30  INFO 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PRODUCT-SERVICE/DESKTOP-LA2D2ND:PRODUCT-SERVICE:8082 with status UP (replication=true)
+2025-05-29T10:04:43.377+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : registered PRODUCT-SERVICE, vip PRODUCT-SERVICE, leaseDuration 90, isReplication true
+2025-05-29T10:04:43.394+05:30 DEBUG 3996 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-6] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-05-29T10:04:43.394+05:30 DEBUG 3996 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-6] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-05-29T10:05:01.245+05:30  INFO 3996 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-29T10:05:12.467+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId DESKTOP-LA2D2ND:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T10:05:12.975+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-8] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-05-29T10:05:12.975+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-8] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-05-29T10:05:12.975+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId DESKTOP-LA2D2ND:PRODUCT-SERVICE:8082, isReplication true
+2025-05-29T10:05:12.978+05:30 DEBUG 3996 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-6] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-05-29T10:05:12.978+05:30 DEBUG 3996 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-6] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-05-29T10:05:13.179+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-10] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
+2025-05-29T10:05:13.179+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-10] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
+2025-05-29T10:05:13.180+05:30  INFO 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/DESKTOP-LA2D2ND:ORDER-SERVICE:8081 with status UP (replication=false)
+2025-05-29T10:05:13.180+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : registered ORDER-SERVICE, vip ORDER-SERVICE, leaseDuration 90, isReplication false
+2025-05-29T10:05:13.686+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-1] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 1
+2025-05-29T10:05:13.687+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-1] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
+2025-05-29T10:05:13.687+05:30  INFO 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/DESKTOP-LA2D2ND:ORDER-SERVICE:8081 with status UP (replication=true)
+2025-05-29T10:05:13.687+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : registered ORDER-SERVICE, vip ORDER-SERVICE, leaseDuration 90, isReplication true
+2025-05-29T10:05:13.689+05:30 DEBUG 3996 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-6] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-05-29T10:05:13.690+05:30 DEBUG 3996 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-6] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-05-29T10:05:42.478+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId DESKTOP-LA2D2ND:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T10:05:42.994+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-5] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-05-29T10:05:42.994+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-5] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-05-29T10:05:42.994+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId DESKTOP-LA2D2ND:PRODUCT-SERVICE:8082, isReplication true
+2025-05-29T10:05:42.998+05:30 DEBUG 3996 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-13] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-05-29T10:05:42.999+05:30 DEBUG 3996 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-13] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-05-29T10:05:43.113+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId DESKTOP-LA2D2ND:ORDER-SERVICE:8081, isReplication false
+2025-05-29T10:05:43.629+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-8] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-05-29T10:05:43.629+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-8] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-05-29T10:05:43.629+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId DESKTOP-LA2D2ND:ORDER-SERVICE:8081, isReplication true
+2025-05-29T10:05:43.633+05:30 DEBUG 3996 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-6] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-05-29T10:05:43.633+05:30 DEBUG 3996 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-6] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-05-29T10:06:01.000+05:30 DEBUG 3996 --- [EUREKA_SERVER] [Eureka-PeerNodesUpdater] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
+2025-05-29T10:06:01.246+05:30  INFO 3996 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-05-29T10:06:12.492+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId DESKTOP-LA2D2ND:PRODUCT-SERVICE:8082, isReplication false
+2025-05-29T10:06:13.005+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-05-29T10:06:13.005+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-05-29T10:06:13.006+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed PRODUCT-SERVICE, serverId DESKTOP-LA2D2ND:PRODUCT-SERVICE:8082, isReplication true
+2025-05-29T10:06:13.008+05:30 DEBUG 3996 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-13] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-05-29T10:06:13.008+05:30 DEBUG 3996 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-13] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-05-29T10:06:13.123+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId DESKTOP-LA2D2ND:ORDER-SERVICE:8081, isReplication false
+2025-05-29T10:06:13.637+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-5] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-05-29T10:06:13.637+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-5] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-05-29T10:06:13.638+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId DESKTOP-LA2D2ND:ORDER-SERVICE:8081, isReplication true
+2025-05-29T10:06:13.640+05:30 DEBUG 3996 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-6] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-05-29T10:06:13.641+05:30 DEBUG 3996 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-6] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-05-29T10:06:20.184+05:30  INFO 3996 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EUREKA_SERVER with eureka with status DOWN
+2025-05-29T10:06:20.188+05:30  INFO 3996 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-29T10:06:20.194+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-6] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
+2025-05-29T10:06:20.195+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-6] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
+2025-05-29T10:06:20.196+05:30  INFO 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/DESKTOP-LA2D2ND:ORDER-SERVICE:8081 with status DOWN (replication=false)
+2025-05-29T10:06:20.196+05:30 DEBUG 3996 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : registered ORDER-SERVICE, vip ORDER-SERVICE, leaseDuration 90, isReplication false
+2025-05-29T10:06:20.217+05:30  INFO 3996 --- [EUREKA_SERVER] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-29T10:06:20.221+05:30  INFO 3996 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2025-05-29T10:06:20.221+05:30  INFO 3996 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2025-05-29T10:06:20.230+05:30  INFO 3996 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2025-05-29T10:06:20.230+05:30  INFO 3996 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2025-05-29T10:06:20.231+05:30  INFO 3996 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2025-05-29T10:06:20.232+05:30  INFO 3996 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2025-05-29T10:06:20.224+05:30 ERROR 3996 --- [EUREKA_SERVER] [Eureka-Jersey3Client-Conn-Cleaner2] c.n.d.s.t.j.EurekaJersey3ClientImpl      : Cannot clean connections
 
 java.lang.IllegalStateException: Client instance has been closed.
 	at org.glassfish.jersey.internal.guava.Preconditions.checkState(Preconditions.java:169) ~[jersey-common-3.1.10.jar:na]
@@ -96,265 +406,5 @@ java.lang.IllegalStateException: Client instance has been closed.
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
 
-2025-05-27T18:59:22.012+05:30 ERROR 20580 --- [EUREKA_SERVER] [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Cannot bootstrap eureka server :
-
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration': Unsatisfied dependency expressed through field 'optionalArgs': Error creating bean with name 'tlsProperties': Could not bind properties to 'TlsProperties' : prefix=eureka.client.tls, ignoreInvalidFields=false, ignoreUnknownFields=true
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:764) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:413) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:378) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:373) ~[spring-cloud-context-4.3.0-RC1.jar:4.3.0-RC1]
-	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:177) ~[spring-cloud-context-4.3.0-RC1.jar:4.3.0-RC1]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:375) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35) ~[spring-aop-6.2.7.jar:6.2.7]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:712) ~[spring-aop-6.2.7.jar:6.2.7]
-	at com.netflix.appinfo.ApplicationInfoManager$$SpringCGLIB$$0.getInfo(<generated>) ~[eureka-client-2.0.4.jar:2.0.4]
-	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.initEurekaServerContext(EurekaServerBootstrap.java:100) ~[spring-cloud-netflix-eureka-server-4.3.0-RC1.jar:4.3.0-RC1]
-	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.contextInitialized(EurekaServerBootstrap.java:70) ~[spring-cloud-netflix-eureka-server-4.3.0-RC1.jar:4.3.0-RC1]
-	at org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration.lambda$start$0(EurekaServerInitializerConfiguration.java:67) ~[spring-cloud-netflix-eureka-server-4.3.0-RC1.jar:4.3.0-RC1]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-Caused by: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'tlsProperties': Could not bind properties to 'TlsProperties' : prefix=eureka.client.tls, ignoreInvalidFields=false, ignoreUnknownFields=true
-	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.bind(ConfigurationPropertiesBindingPostProcessor.java:99) ~[spring-boot-3.5.0.jar:3.5.0]
-	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.postProcessBeforeInitialization(ConfigurationPropertiesBindingPostProcessor.java:79) ~[spring-boot-3.5.0.jar:3.5.0]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:429) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1818) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1682) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolvePreparedArguments(ConstructorResolver.java:845) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:452) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1740) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.7.jar:6.2.7]
-	... 27 common frames omitted
-Caused by: java.lang.IllegalStateException: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30af5b6b has not been refreshed yet
-	at org.springframework.context.support.AbstractApplicationContext.assertBeanFactoryActive(AbstractApplicationContext.java:1259) ~[spring-context-6.2.7.jar:6.2.7]
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1277) ~[spring-context-6.2.7.jar:6.2.7]
-	at org.springframework.boot.context.properties.BoundConfigurationProperties.get(BoundConfigurationProperties.java:76) ~[spring-boot-3.5.0.jar:3.5.0]
-	at org.springframework.boot.context.properties.ConfigurationPropertiesBinder.getHandler(ConfigurationPropertiesBinder.java:144) ~[spring-boot-3.5.0.jar:3.5.0]
-	at org.springframework.boot.context.properties.ConfigurationPropertiesBinder.getBindHandler(ConfigurationPropertiesBinder.java:113) ~[spring-boot-3.5.0.jar:3.5.0]
-	at org.springframework.boot.context.properties.ConfigurationPropertiesBinder.bind(ConfigurationPropertiesBinder.java:93) ~[spring-boot-3.5.0.jar:3.5.0]
-	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.bind(ConfigurationPropertiesBindingPostProcessor.java:96) ~[spring-boot-3.5.0.jar:3.5.0]
-	... 53 common frames omitted
-
-2025-05-27T18:59:22.016+05:30 ERROR 20580 --- [EUREKA_SERVER] [Thread-9] e.s.EurekaServerInitializerConfiguration : Could not initialize Eureka servlet context
-
-java.lang.RuntimeException: Cannot bootstrap eureka server :
-	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.contextInitialized(EurekaServerBootstrap.java:76) ~[spring-cloud-netflix-eureka-server-4.3.0-RC1.jar:4.3.0-RC1]
-	at org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration.lambda$start$0(EurekaServerInitializerConfiguration.java:67) ~[spring-cloud-netflix-eureka-server-4.3.0-RC1.jar:4.3.0-RC1]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration': Unsatisfied dependency expressed through field 'optionalArgs': Error creating bean with name 'tlsProperties': Could not bind properties to 'TlsProperties' : prefix=eureka.client.tls, ignoreInvalidFields=false, ignoreUnknownFields=true
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:764) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:413) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:378) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:373) ~[spring-cloud-context-4.3.0-RC1.jar:4.3.0-RC1]
-	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:177) ~[spring-cloud-context-4.3.0-RC1.jar:4.3.0-RC1]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:375) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35) ~[spring-aop-6.2.7.jar:6.2.7]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:712) ~[spring-aop-6.2.7.jar:6.2.7]
-	at com.netflix.appinfo.ApplicationInfoManager$$SpringCGLIB$$0.getInfo(<generated>) ~[eureka-client-2.0.4.jar:2.0.4]
-	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.initEurekaServerContext(EurekaServerBootstrap.java:100) ~[spring-cloud-netflix-eureka-server-4.3.0-RC1.jar:4.3.0-RC1]
-	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.contextInitialized(EurekaServerBootstrap.java:70) ~[spring-cloud-netflix-eureka-server-4.3.0-RC1.jar:4.3.0-RC1]
-	... 2 common frames omitted
-Caused by: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'tlsProperties': Could not bind properties to 'TlsProperties' : prefix=eureka.client.tls, ignoreInvalidFields=false, ignoreUnknownFields=true
-	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.bind(ConfigurationPropertiesBindingPostProcessor.java:99) ~[spring-boot-3.5.0.jar:3.5.0]
-	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.postProcessBeforeInitialization(ConfigurationPropertiesBindingPostProcessor.java:79) ~[spring-boot-3.5.0.jar:3.5.0]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:429) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1818) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1682) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolvePreparedArguments(ConstructorResolver.java:845) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:452) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1740) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.7.jar:6.2.7]
-	... 27 common frames omitted
-Caused by: java.lang.IllegalStateException: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30af5b6b has not been refreshed yet
-	at org.springframework.context.support.AbstractApplicationContext.assertBeanFactoryActive(AbstractApplicationContext.java:1259) ~[spring-context-6.2.7.jar:6.2.7]
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1277) ~[spring-context-6.2.7.jar:6.2.7]
-	at org.springframework.boot.context.properties.BoundConfigurationProperties.get(BoundConfigurationProperties.java:76) ~[spring-boot-3.5.0.jar:3.5.0]
-	at org.springframework.boot.context.properties.ConfigurationPropertiesBinder.getHandler(ConfigurationPropertiesBinder.java:144) ~[spring-boot-3.5.0.jar:3.5.0]
-	at org.springframework.boot.context.properties.ConfigurationPropertiesBinder.getBindHandler(ConfigurationPropertiesBinder.java:113) ~[spring-boot-3.5.0.jar:3.5.0]
-	at org.springframework.boot.context.properties.ConfigurationPropertiesBinder.bind(ConfigurationPropertiesBinder.java:93) ~[spring-boot-3.5.0.jar:3.5.0]
-	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.bind(ConfigurationPropertiesBindingPostProcessor.java:96) ~[spring-boot-3.5.0.jar:3.5.0]
-	... 53 common frames omitted
-
-2025-05-27T18:59:22.040+05:30  INFO 20580 --- [EUREKA_SERVER] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-05-27T18:59:22.059+05:30 ERROR 20580 --- [EUREKA_SERVER] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8761 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8761 or configure this application to listen on another port.
-
-2025-05-27T18:59:29.978+05:30  INFO 6284 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-27T18:59:29.981+05:30  INFO 6284 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-27T18:59:29.982+05:30  INFO 6284 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-05-27T18:59:33.843+05:30  INFO 6284 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EUREKA_SERVER with eureka with status DOWN
-2025-05-27T18:59:33.843+05:30  INFO 6284 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-27T18:59:33.872+05:30  INFO 6284 --- [EUREKA_SERVER] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-27T18:59:33.875+05:30  INFO 6284 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
-2025-05-27T18:59:33.875+05:30  INFO 6284 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
-2025-05-27T18:59:33.875+05:30  INFO 6284 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
-2025-05-27T18:59:33.875+05:30  INFO 6284 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
-2025-05-27T18:59:33.882+05:30  INFO 6284 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
-2025-05-27T18:59:33.882+05:30  INFO 6284 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
-2025-05-27T18:59:33.875+05:30 ERROR 6284 --- [EUREKA_SERVER] [Eureka-Jersey3Client-Conn-Cleaner2] c.n.d.s.t.j.EurekaJersey3ClientImpl      : Cannot clean connections
-
-java.lang.IllegalStateException: Client instance has been closed.
-	at org.glassfish.jersey.internal.guava.Preconditions.checkState(Preconditions.java:169) ~[jersey-common-3.1.10.jar:na]
-	at org.glassfish.jersey.client.JerseyClient.checkNotClosed(JerseyClient.java:248) ~[jersey-client-3.1.10.jar:na]
-	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:363) ~[jersey-client-3.1.10.jar:na]
-	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:54) ~[jersey-client-3.1.10.jar:na]
-	at com.netflix.discovery.shared.transport.jersey3.EurekaJersey3ClientImpl$ConnectionCleanerTask.run(EurekaJersey3ClientImpl.java:338) ~[eureka-client-jersey3-2.0.4.jar:2.0.4]
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328) ~[na:na]
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-
-2025-05-27T18:59:33.892+05:30  INFO 6284 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2025-05-27T18:59:33.892+05:30  INFO 6284 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
-2025-05-27T18:59:47.032+05:30  INFO 7252 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : Starting EurekaServerApplication using Java 24 with PID 7252 (D:\SB\Microservice\Ordering_System\eureka-server\eureka-server\target\classes started by admin_sirius in D:\SB\Microservice\Ordering_System\eureka-server\eureka-server)
-2025-05-27T18:59:47.034+05:30 DEBUG 7252 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : Running with Spring Boot v3.5.0, Spring v6.2.7
-2025-05-27T18:59:47.034+05:30  INFO 7252 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : No active profile set, falling back to 1 default profile: "default"
-2025-05-27T18:59:48.141+05:30  INFO 7252 --- [EUREKA_SERVER] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=466c9d9a-5447-3185-92dd-c126b285e2ee
-2025-05-27T18:59:48.531+05:30  INFO 7252 --- [EUREKA_SERVER] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
-2025-05-27T18:59:48.545+05:30  INFO 7252 --- [EUREKA_SERVER] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-27T18:59:48.545+05:30  INFO 7252 --- [EUREKA_SERVER] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-05-27T18:59:48.623+05:30  INFO 7252 --- [EUREKA_SERVER] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-27T18:59:48.624+05:30  INFO 7252 --- [EUREKA_SERVER] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1545 ms
-2025-05-27T18:59:49.119+05:30 DEBUG 7252 --- [EUREKA_SERVER] [main] .c.n.e.s.EurekaServerAutoConfiguration$1 : Filter 'eurekaVersionFilterRegistration' configured for use
-2025-05-27T18:59:49.555+05:30  INFO 7252 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2025-05-27T18:59:49.556+05:30  INFO 7252 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2025-05-27T18:59:49.789+05:30  INFO 7252 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2025-05-27T18:59:49.789+05:30  INFO 7252 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2025-05-27T18:59:50.020+05:30  INFO 7252 --- [EUREKA_SERVER] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2025-05-27T18:59:50.394+05:30 DEBUG 7252 --- [EUREKA_SERVER] [main] .n.e.m.DefaultManagementMetadataProvider : Constructed eureka meta-data healthcheckUrl: http://DESKTOP-LA2D2ND:8761/actuator/health
-2025-05-27T18:59:50.396+05:30 DEBUG 7252 --- [EUREKA_SERVER] [main] .n.e.m.DefaultManagementMetadataProvider : Constructed eureka meta-data statusPageUrl: http://DESKTOP-LA2D2ND:8761/actuator/info
-2025-05-27T18:59:50.798+05:30  WARN 7252 --- [EUREKA_SERVER] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-05-27T18:59:50.824+05:30  INFO 7252 --- [EUREKA_SERVER] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2025-05-27T18:59:50.849+05:30  INFO 7252 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2025-05-27T18:59:50.850+05:30  INFO 7252 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
-2025-05-27T18:59:50.854+05:30  INFO 7252 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1748352590852 with initial instances count: 0
-2025-05-27T18:59:50.899+05:30  INFO 7252 --- [EUREKA_SERVER] [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
-2025-05-27T18:59:50.901+05:30 DEBUG 7252 --- [EUREKA_SERVER] [main] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
-2025-05-27T18:59:50.901+05:30  INFO 7252 --- [EUREKA_SERVER] [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
-2025-05-27T18:59:51.000+05:30  INFO 7252 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2025-05-27T18:59:51.000+05:30  INFO 7252 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2025-05-27T18:59:51.000+05:30  INFO 7252 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2025-05-27T18:59:51.000+05:30  INFO 7252 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2025-05-27T18:59:51.040+05:30  INFO 7252 --- [EUREKA_SERVER] [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
-2025-05-27T18:59:51.047+05:30  INFO 7252 --- [EUREKA_SERVER] [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
-2025-05-27T18:59:51.047+05:30  INFO 7252 --- [EUREKA_SERVER] [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
-2025-05-27T18:59:51.062+05:30  INFO 7252 --- [EUREKA_SERVER] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2025-05-27T18:59:51.130+05:30  INFO 7252 --- [EUREKA_SERVER] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA_SERVER with eureka with status UP
-2025-05-27T18:59:51.146+05:30  INFO 7252 --- [EUREKA_SERVER] [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
-2025-05-27T18:59:51.147+05:30  INFO 7252 --- [EUREKA_SERVER] [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
-2025-05-27T18:59:51.147+05:30  INFO 7252 --- [EUREKA_SERVER] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
-2025-05-27T18:59:51.147+05:30  INFO 7252 --- [EUREKA_SERVER] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
-2025-05-27T18:59:51.147+05:30  INFO 7252 --- [EUREKA_SERVER] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
-2025-05-27T18:59:51.150+05:30  INFO 7252 --- [EUREKA_SERVER] [Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
-2025-05-27T18:59:51.159+05:30  INFO 7252 --- [EUREKA_SERVER] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path '/'
-2025-05-27T18:59:51.159+05:30  INFO 7252 --- [EUREKA_SERVER] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
-2025-05-27T18:59:51.178+05:30  INFO 7252 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : Started EurekaServerApplication in 4.739 seconds (process running for 5.341)
-2025-05-27T19:00:05.972+05:30  INFO 7252 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-27T19:00:05.972+05:30  INFO 7252 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-27T19:00:05.973+05:30  INFO 7252 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-05-27T19:00:51.148+05:30  INFO 7252 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-05-27T19:01:03.574+05:30  INFO 7252 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EUREKA_SERVER with eureka with status DOWN
-2025-05-27T19:01:03.581+05:30  INFO 7252 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-27T19:01:03.590+05:30  INFO 7252 --- [EUREKA_SERVER] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-27T19:01:03.602+05:30  INFO 7252 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
-2025-05-27T19:01:03.602+05:30  INFO 7252 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
-2025-05-27T19:01:03.602+05:30  INFO 7252 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
-2025-05-27T19:01:03.602+05:30  INFO 7252 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
-2025-05-27T19:01:03.609+05:30  INFO 7252 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
-2025-05-27T19:01:03.610+05:30  INFO 7252 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
-2025-05-27T19:01:03.602+05:30 ERROR 7252 --- [EUREKA_SERVER] [Eureka-Jersey3Client-Conn-Cleaner2] c.n.d.s.t.j.EurekaJersey3ClientImpl      : Cannot clean connections
-
-java.lang.IllegalStateException: Client instance has been closed.
-	at org.glassfish.jersey.internal.guava.Preconditions.checkState(Preconditions.java:169) ~[jersey-common-3.1.10.jar:na]
-	at org.glassfish.jersey.client.JerseyClient.checkNotClosed(JerseyClient.java:248) ~[jersey-client-3.1.10.jar:na]
-	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:363) ~[jersey-client-3.1.10.jar:na]
-	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:54) ~[jersey-client-3.1.10.jar:na]
-	at com.netflix.discovery.shared.transport.jersey3.EurekaJersey3ClientImpl$ConnectionCleanerTask.run(EurekaJersey3ClientImpl.java:338) ~[eureka-client-jersey3-2.0.4.jar:2.0.4]
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) ~[na:na]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328) ~[na:na]
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-
-2025-05-27T19:01:03.617+05:30  INFO 7252 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2025-05-27T19:01:03.617+05:30  INFO 7252 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-05-29T10:06:20.254+05:30  INFO 3996 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-05-29T10:06:20.255+05:30  INFO 3996 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
