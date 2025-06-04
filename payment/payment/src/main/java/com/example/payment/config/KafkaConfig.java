@@ -9,5 +9,5 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties(prefix = "kafka.topics")
 public class KafkaConfig {
     private String payment;
-    private String inventory;
+    private String order;
 }

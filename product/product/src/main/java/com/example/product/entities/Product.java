@@ -16,10 +16,14 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @Column(name ="name", nullable = false)
     private String name;
 
+    @Column(name ="description", nullable = false)
     private String description;
+    @Column(name ="sku_code", nullable = false)
     private String skuCode;
+    @Column(name ="price", nullable = false)
     private double price;
 
 }

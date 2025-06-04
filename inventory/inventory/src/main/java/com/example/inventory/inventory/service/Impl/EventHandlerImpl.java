@@ -1,63 +1,83 @@
 package com.example.inventory.inventory.service.Impl;
 
 import com.example.inventory.inventory.config.KafkaConfiguration;
-import com.example.inventory.inventory.dto.InventoryDTO;
+import com.example.inventory.inventory.entities.Inventory;
 import com.example.inventory.inventory.enums.InventoryStatus;
 import com.example.inventory.inventory.events.InventoryEvent;
-import com.example.inventory.inventory.events.OrderEvent;
+import com.example.inventory.inventory.repo.InventoryRepository;
 import com.example.inventory.inventory.service.EventHandler;
 import com.example.inventory.inventory.service.kafka.InventoryKafkaProducer;
-import com.example.inventory.inventory.service.InventoryService;
-import com.example.inventory.inventory.service.Messenger;
 import org.springframework.stereotype.Service;
+
+import java.util.Optional;
+import java.util.function.Consumer;
 
 
 @Service
 public class EventHandlerImpl implements EventHandler {
 
-    private final InventoryService service;
+    private final InventoryRepository repo;
     private final InventoryKafkaProducer kafkaProducer;
     private final KafkaConfiguration config;
 
-    public EventHandlerImpl(InventoryService service, InventoryKafkaProducer kafkaProducer, KafkaConfiguration config) {
-        this.service = service;
+    public EventHandlerImpl(InventoryRepository repo, InventoryKafkaProducer kafkaProducer, KafkaConfiguration config) {
+        this.repo = repo;
         this.kafkaProducer = kafkaProducer;
         this.config = config;
     }
 
     @Override
-    public void processOrderEvent(OrderEvent event) {
-        OrderEvent sEvent = new OrderEvent();
-        sEvent.setOrderId(event.getOrderId());
-        InventoryDTO inventoryDTO = service.getInventoryByProductId(event.getProductId());
-        if(inventoryDTO != null ){
-            if(inventoryDTO.getAvailableQuantity() >= event.getQuantity())
+    public void processOrderEvent(InventoryEvent event) {
+
+        handleInventoryEvent(event);
+
+    }
+
+    @Override
+    public void handleInventoryEvent(InventoryEvent event) {
+        InventoryEvent sEvent = new InventoryEvent(event);
+        Optional<Inventory> optional = repo.findByProductId(event.getProductId());
+        if(optional.isPresent() ){
+            Inventory inventory = optional.get();
+            if(inventory.getAvailableQuantity() >= event.getQuantity())
             {
-                service.reservedInventory(event.getProductId(), event.getQuantity());
+                reservedInventory(inventory, event.getQuantity());
                 System.out.println("in process");
-                sEvent.setReason("Reservered Stock");
-                sEvent.setStatus(InventoryStatus.Reserved);
+                setReason(sEvent, "Reserved Stock",InventoryStatus.Reserved);
+
 
             }
             else {
-                sEvent.setReason("Out Of Stock");
-                sEvent.setStatus(InventoryStatus.Failed);
+                setReason(sEvent, "Out Of Stock",InventoryStatus.Failed );
             }
         }
         else {
-            sEvent.setReason("Product Not Available");
-            sEvent.setStatus(InventoryStatus.Failed);
-
+            setReason(sEvent, "Product Not Available",InventoryStatus.Failed );
         }
         kafkaProducer.publishMsg(config.getInventory(), sEvent);
     }
 
-    @Override
-    public InventoryEvent getIEvent(OrderEvent event) {
-        InventoryEvent iEvent = new InventoryEvent();
-        iEvent.setOrderId(event.getOrderId());
-        return iEvent;
+    private void setReason(InventoryEvent event, String reason, InventoryStatus status)
+    {
+        event.setStatus(status);
+        event.setReason(reason);
     }
+
+    public void reservedInventory(Inventory invent, int quantity) {
+        Consumer<Inventory> consumer = inventory -> {
+            inventory.setTotalQuantity(inventory.getTotalQuantity() - quantity);
+            inventory.setReservedQuantity(inventory.getReservedQuantity()+ quantity);
+            repo.save(inventory);
+        };
+       consumer.accept(invent);
+    }
+
+//    @Override
+//    public InventoryEvent getIEvent(InventoryEvent event) {
+//        InventoryEvent iEvent = new InventoryEvent();
+//        iEvent.setOrderId(event.getOrderId());
+//        return iEvent;
+//    }
 
 
 }

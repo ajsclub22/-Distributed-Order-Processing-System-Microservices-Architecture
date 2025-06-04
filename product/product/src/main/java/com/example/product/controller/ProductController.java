@@ -1,5 +1,6 @@
 package com.example.product.controller;
 
+import com.example.product.dto.ProductDTO;
 import com.example.product.entities.Product;
 import com.example.product.repo.ProductRepository;
 import com.example.product.service.ProductService;
@@ -20,19 +21,19 @@ public class ProductController {
 
 
     @PostMapping
-    public ResponseEntity<Product> addProduct(@RequestBody Product product) {
-        Product savedProduct = productService.addProduct(product);
+    public ResponseEntity<ProductDTO> addProduct(@RequestBody Product product) {
+        ProductDTO savedProduct = productService.addProduct(product);
         return ResponseEntity.status(HttpStatus.CREATED).body(savedProduct);
     }
 
     @GetMapping
-    public ResponseEntity<List<Product>> getAllProducts() {
-        List<Product> productList = productService.getAllProducts();
+    public ResponseEntity<List<ProductDTO>> getAllProducts() {
+        List<ProductDTO> productList = productService.getAllProducts();
         return ResponseEntity.ok(productList); // Return empty list with 200 is fine
     }
 
     @GetMapping("/{id}")
-    public Product getProductById(@PathVariable Long id) {
+    public ProductDTO getProductById(@PathVariable Long id) {
         return productService.getProductById(id);
     }
 

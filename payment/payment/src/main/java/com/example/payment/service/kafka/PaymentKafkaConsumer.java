@@ -1,7 +1,7 @@
 package com.example.payment.service.kafka;
 
-import com.example.payment.events.InventoryEvent;
-import com.example.payment.service.PaymentService;
+import com.example.payment.events.PaymentEvent;
+import com.example.payment.service.EventHandler;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
@@ -9,18 +9,19 @@ import org.springframework.stereotype.Service;
 @Service
 public class PaymentKafkaConsumer {
     private final ObjectMapper mapper = new ObjectMapper();
-    private final PaymentService service;
+    private final EventHandler handler;
 
-    public PaymentKafkaConsumer(PaymentService service) {
-        this.service = service;
+    public PaymentKafkaConsumer(EventHandler handler) {
+        this.handler = handler;
     }
 
-    @KafkaListener(topics = "inventory-reserved", groupId = "payment-group")
-    public void getInventoryEvent(String event)
+    @KafkaListener(topics = "payment-initiated", groupId = "payment-group")
+    public void getPaymentEvent(String event)
     {
+        //receive the payment event  from the order service
         try{
-            InventoryEvent inventory = mapper.readValue(event, InventoryEvent.class);
-            service.processPayment(inventory);
+            PaymentEvent paymentEvent = mapper.readValue(event, PaymentEvent.class);
+            handler.processPayment(paymentEvent);
         }
         catch (Exception e){
             e.printStackTrace();

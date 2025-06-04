@@ -1,4 +1,7 @@
 package com.example.payment.service;
 
-public class PaymentService {
+import com.example.payment.events.PaymentEvent;
+
+public interface PaymentService {
+    void processPayment(PaymentEvent paymentEvent);
 }
