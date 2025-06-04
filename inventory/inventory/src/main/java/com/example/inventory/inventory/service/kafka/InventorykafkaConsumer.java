@@ -1,18 +1,18 @@
 package com.example.inventory.inventory.service.kafka;
 
-import com.example.inventory.inventory.events.OrderEvent;
-import com.example.inventory.inventory.service.Messenger;
+import com.example.inventory.inventory.events.InventoryEvent;
+import com.example.inventory.inventory.service.EventHandler;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
 @Service
 public class InventorykafkaConsumer {
-    private final Messenger messenger;
+    private final EventHandler handler;
     private final ObjectMapper objectMapper = new ObjectMapper();
 
-    public InventorykafkaConsumer(Messenger messenger) {
-        this.messenger = messenger;
+    public InventorykafkaConsumer(EventHandler handler) {
+        this.handler = handler;
     }
 
     @KafkaListener(topics = "order-created", groupId = "inventory-group")
@@ -21,8 +21,8 @@ public class InventorykafkaConsumer {
         try
         {
             System.out.println(eventJson);
-            OrderEvent event = objectMapper.readValue(eventJson, OrderEvent.class);
-            messenger.processOrderEvent(event);
+            InventoryEvent event = objectMapper.readValue(eventJson, InventoryEvent.class);
+            handler.processOrderEvent(event);
 
         }
         catch (Exception e)

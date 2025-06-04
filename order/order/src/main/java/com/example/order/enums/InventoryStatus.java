@@ -1,4 +1,6 @@
 package com.example.order.enums;
 
-public class InventoryStatus {
+public enum InventoryStatus {
+    Reserved,
+    Failed
 }

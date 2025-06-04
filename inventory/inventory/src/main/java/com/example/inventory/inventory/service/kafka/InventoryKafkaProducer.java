@@ -1,9 +1,7 @@
 package com.example.inventory.inventory.service.kafka;
 
-import com.example.inventory.inventory.events.InventoryEvent;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.kafka.core.KafkaTemplate;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -15,7 +13,7 @@ public class InventoryKafkaProducer {
         this.kafkaTemplate = kafkaTemplate;
     }
 
-    public void publishMsg(String topic, InventoryEvent msgEvent){
+    public void publishMsg(String topic, Object msgEvent){
         try
         {
             String msg = mapper.writeValueAsString(msgEvent);
