@@ -11,4 +11,5 @@ public class KafkaConfig {
     private String order;
     private String payment;
     private String inventory;
+    private String notify;
 }

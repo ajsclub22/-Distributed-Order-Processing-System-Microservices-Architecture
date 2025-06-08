@@ -6,6 +6,7 @@ import com.example.order.enums.OrderStatusMessages;
 import com.example.order.service.EventHandler;
 import com.example.order.repo.OrderRepository;
 import com.example.order.service.OrderService;
+import com.example.order.util.OrderUtility;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,7 +18,6 @@ public class OrderServiceImpl implements OrderService {
 
     //Repository Object
     private final OrderRepository orderRepository;
-    private final Supplier<OrderDTO> supplier = OrderDTO::new;
     private final EventHandler handler;
 
     public OrderServiceImpl(OrderRepository orderRepository, EventHandler handler) {
@@ -32,7 +32,7 @@ public class OrderServiceImpl implements OrderService {
     public OrderDTO getOrderById(Long id) {
 
         return orderRepository.findById(id)
-                        .map(this::getOrderDTO)
+                        .map(OrderUtility::getOrderDTO)
                 .orElse(null);
     }
 
@@ -53,7 +53,7 @@ public class OrderServiceImpl implements OrderService {
         handler.handleInventoryEvent(savedOrder);
 
         //return back the order details to the client
-        return getOrderDTO(savedOrder);
+        return OrderUtility.getOrderDTO(savedOrder);
 
     }
 
@@ -62,15 +62,7 @@ public class OrderServiceImpl implements OrderService {
         return mapOrdersToDTOs(orderRepository.findByProductId(id));
     }
 
-    private OrderDTO getOrderDTO(Order order) {
-        OrderDTO dto = supplier.get();
-        dto.setMessage(OrderStatusMessages.getMessage(order.getStatus()));
-        dto.setOrderId(order.getId());
-        dto.setStatus(order.getStatus());
-        dto.setQuantity(order.getQuantity());
-        dto.setPrice(order.getPrice());
-        return dto;
-    }
+
 
 
 
@@ -78,7 +70,7 @@ public class OrderServiceImpl implements OrderService {
     private List<OrderDTO> mapOrdersToDTOs(List<Order> orderList)
     {
         return orderList.
-                stream().map(this::getOrderDTO)
+                stream().map(OrderUtility::getOrderDTO)
                 .collect(Collectors.toList());
     }
 
