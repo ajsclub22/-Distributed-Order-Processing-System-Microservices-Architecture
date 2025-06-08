@@ -6,10 +6,12 @@ import com.example.order.enums.InventoryStatus;
 import com.example.order.enums.OrderStatus;
 import com.example.order.enums.PaymentStatus;
 import com.example.order.events.InventoryEvent;
+import com.example.order.events.NotificationEvent;
 import com.example.order.events.PaymentEvent;
 import com.example.order.repo.OrderRepository;
 import com.example.order.service.EventHandler;
 import com.example.order.service.kafka.OrderKakfaProducer;
+import com.example.order.util.OrderUtility;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -79,12 +81,14 @@ public class EventHandlerImpl implements EventHandler {
 
     @Override
     public void handleNotifiactionEvent(Order order) {
+        NotificationEvent nEvent = OrderUtility.getNotificationEvent(order);
+        publishMsg(nEvent);
     }
 
     @Override
     public void handleInventoryEvent(Order order) {
         //handle the inventory send event & send the event
-        InventoryEvent iEvent = getInventoryEvent(order);
+        InventoryEvent iEvent = OrderUtility.getInventoryEvent(order);
         publishMsg(iEvent);
     }
 
@@ -93,27 +97,13 @@ public class EventHandlerImpl implements EventHandler {
     public void handlePaymentEvent(Order order) {
         // make the payment event and send the event
         //to the payment service
-        PaymentEvent event = getPaymentEvent(order);
+        PaymentEvent event = OrderUtility.getPaymentEvent(order);
         publishMsg(event);
     }
 
-    private PaymentEvent getPaymentEvent(Order order) {
-        PaymentEvent event = new PaymentEvent();
-        event.setClientId(order.getClientId());
-        event.setPrice(order.getPrice());
-        event.setOrderId(order.getId());
-        return event;
 
-    }
 
-    private InventoryEvent getInventoryEvent(Order order)
-    {
-        InventoryEvent event = new InventoryEvent();
-        event.setOrderId(order.getId());
-        event.setQuantity(order.getQuantity());
-        event.setProductId(order.getProductId());
-        return event;
-    }
+
 
     private void publishMsg(Object event) {
         //method for identified the event type and send
@@ -123,6 +113,10 @@ public class EventHandlerImpl implements EventHandler {
             topic = config.getOrder();
         else if (event instanceof PaymentEvent)
             topic = config.getPayment();
+        else if(event instanceof NotificationEvent)
+            topic = config.getNotify();
+
+
         if(topic != null)
             producer.publishMsg(topic, event);
     }

@@ -38,6 +38,9 @@ public class Order {
     @Column(name="client_id", nullable = false)
     private Long clientId;
 
+    @Column(name="clinet_mail", nullable = false)
+    private String email;
+
     // This method will be called just before the entity is persisted
     //initially when the order is there is the
     //status should in the pending mode
