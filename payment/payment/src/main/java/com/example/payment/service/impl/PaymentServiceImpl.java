@@ -10,13 +10,9 @@ import com.example.payment.service.kafka.PaymentKafkaProducer;
 
 public class PaymentServiceImpl implements PaymentService {
     private final PaymentRepository repo;
-    private final PaymentKafkaProducer producer;
-    private final KafkaConfig config;
 
-    public PaymentServiceImpl(PaymentRepository repo, PaymentKafkaProducer producer, KafkaConfig config, KafkaConfig config1) {
+    public PaymentServiceImpl(PaymentRepository repo) {
         this.repo = repo;
-        this.producer = producer;
-        this.config = config1;
     }
 
     @Override

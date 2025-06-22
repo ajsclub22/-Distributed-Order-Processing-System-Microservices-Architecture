@@ -4,10 +4,17 @@ import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-@Data
+
 @Component
 @ConfigurationProperties(prefix = "kafka.topics")
+@Data
 public class KafkaConfig {
-    private String payment;
-    private String order;
+    private Payment payment;
+
+
+    @Data
+    public static class Payment {
+        private String request;
+        private String response;
+    }
 }

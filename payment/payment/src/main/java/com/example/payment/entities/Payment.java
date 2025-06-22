@@ -14,8 +14,7 @@ import lombok.NoArgsConstructor;
 @Table(name = "payment_db")
 public class Payment {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private long orderId;
 
     @Column(nullable = false)
     private double price;

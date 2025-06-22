@@ -1,541 +1,114 @@
-2025-06-06T09:46:44.553+05:30  INFO 37996 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : Starting EurekaServerApplication using Java 24 with PID 37996 (D:\SB\Microservice\Ordering_System\eureka-server\eureka-server\target\classes started by admin_sirius in D:\SB\Microservice\Ordering_System\eureka-server\eureka-server)
-2025-06-06T09:46:44.564+05:30 DEBUG 37996 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : Running with Spring Boot v3.5.0, Spring v6.2.7
-2025-06-06T09:46:44.565+05:30  INFO 37996 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : No active profile set, falling back to 1 default profile: "default"
-2025-06-06T09:46:46.909+05:30  INFO 37996 --- [EUREKA_SERVER] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=466c9d9a-5447-3185-92dd-c126b285e2ee
-2025-06-06T09:46:47.695+05:30  INFO 37996 --- [EUREKA_SERVER] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
-2025-06-06T09:46:47.729+05:30  INFO 37996 --- [EUREKA_SERVER] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-06T09:46:47.730+05:30  INFO 37996 --- [EUREKA_SERVER] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-06-06T09:46:47.855+05:30  INFO 37996 --- [EUREKA_SERVER] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-06T09:46:47.855+05:30  INFO 37996 --- [EUREKA_SERVER] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3156 ms
-2025-06-06T09:46:48.747+05:30 DEBUG 37996 --- [EUREKA_SERVER] [main] .c.n.e.s.EurekaServerAutoConfiguration$1 : Filter 'eurekaVersionFilterRegistration' configured for use
-2025-06-06T09:46:49.583+05:30  INFO 37996 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2025-06-06T09:46:49.585+05:30  INFO 37996 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2025-06-06T09:46:50.088+05:30  INFO 37996 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2025-06-06T09:46:50.089+05:30  INFO 37996 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2025-06-06T09:46:50.434+05:30  INFO 37996 --- [EUREKA_SERVER] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2025-06-06T09:46:52.050+05:30  INFO 37996 --- [EUREKA_SERVER] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2025-06-06T09:46:52.059+05:30 DEBUG 37996 --- [EUREKA_SERVER] [main] .n.e.m.DefaultManagementMetadataProvider : Constructed eureka meta-data healthcheckUrl: http://localhost:8761/actuator/health
-2025-06-06T09:46:52.060+05:30 DEBUG 37996 --- [EUREKA_SERVER] [main] .n.e.m.DefaultManagementMetadataProvider : Constructed eureka meta-data statusPageUrl: http://localhost:8761/actuator/info
-2025-06-06T09:46:53.662+05:30  INFO 37996 --- [EUREKA_SERVER] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2025-06-06T09:46:53.745+05:30  WARN 37996 --- [EUREKA_SERVER] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-06-06T09:46:53.773+05:30  INFO 37996 --- [EUREKA_SERVER] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2025-06-06T09:46:53.799+05:30  INFO 37996 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2025-06-06T09:46:53.799+05:30  INFO 37996 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
-2025-06-06T09:46:53.803+05:30  INFO 37996 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749183413801 with initial instances count: 0
-2025-06-06T09:46:53.860+05:30  INFO 37996 --- [EUREKA_SERVER] [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
-2025-06-06T09:46:53.861+05:30 DEBUG 37996 --- [EUREKA_SERVER] [main] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
-2025-06-06T09:46:53.862+05:30  WARN 37996 --- [EUREKA_SERVER] [main] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
-2025-06-06T09:46:53.878+05:30  INFO 37996 --- [EUREKA_SERVER] [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
-2025-06-06T09:46:53.878+05:30  INFO 37996 --- [EUREKA_SERVER] [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
-2025-06-06T09:46:53.903+05:30  INFO 37996 --- [EUREKA_SERVER] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2025-06-06T09:46:53.998+05:30  INFO 37996 --- [EUREKA_SERVER] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA_SERVER with eureka with status UP
-2025-06-06T09:46:54.019+05:30  INFO 37996 --- [EUREKA_SERVER] [Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
-2025-06-06T09:46:54.020+05:30  INFO 37996 --- [EUREKA_SERVER] [Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
-2025-06-06T09:46:54.020+05:30  INFO 37996 --- [EUREKA_SERVER] [Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
-2025-06-06T09:46:54.020+05:30  INFO 37996 --- [EUREKA_SERVER] [Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
-2025-06-06T09:46:54.021+05:30  INFO 37996 --- [EUREKA_SERVER] [Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
-2025-06-06T09:46:54.024+05:30  INFO 37996 --- [EUREKA_SERVER] [Thread-10] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
-2025-06-06T09:46:54.037+05:30  INFO 37996 --- [EUREKA_SERVER] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path '/'
-2025-06-06T09:46:54.038+05:30  INFO 37996 --- [EUREKA_SERVER] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
-2025-06-06T09:46:55.061+05:30  INFO 37996 --- [EUREKA_SERVER] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2025-06-06T09:46:55.093+05:30  INFO 37996 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : Started EurekaServerApplication in 12.524 seconds (process running for 19.555)
-2025-06-06T09:47:54.022+05:30  INFO 37996 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T09:48:54.023+05:30  INFO 37996 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T09:49:51.071+05:30  INFO 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-06T09:49:51.071+05:30  INFO 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-06T09:49:51.073+05:30  INFO 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-06-06T09:49:51.436+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
-2025-06-06T09:49:51.436+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
-2025-06-06T09:49:51.460+05:30  INFO 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INVENTORY-SERVICE/localhost:INVENTORY-SERVICE:8083 with status UP (replication=false)
-2025-06-06T09:49:51.463+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : registered INVENTORY-SERVICE, vip INVENTORY-SERVICE, leaseDuration 90, isReplication false
-2025-06-06T09:49:54.024+05:30  INFO 37996 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2025-06-06T09:50:21.259+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T09:50:28.371+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-6] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
-2025-06-06T09:50:28.371+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-6] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
-2025-06-06T09:50:28.371+05:30  INFO 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PAYMENT-SERVICE/localhost:PAYMENT-SERVICE:8084 with status UP (replication=false)
-2025-06-06T09:50:28.372+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : registered PAYMENT-SERVICE, vip PAYMENT-SERVICE, leaseDuration 90, isReplication false
-2025-06-06T09:50:51.273+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T09:50:54.024+05:30  INFO 37996 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T09:50:54.360+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-10] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
-2025-06-06T09:50:54.361+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-10] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
-2025-06-06T09:50:54.361+05:30  INFO 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/localhost:ORDER-SERVICE:8081 with status UP (replication=false)
-2025-06-06T09:50:54.361+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : registered ORDER-SERVICE, vip ORDER-SERVICE, leaseDuration 90, isReplication false
-2025-06-06T09:50:58.300+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T09:51:21.288+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T09:51:24.212+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T09:51:28.312+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T09:51:51.298+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T09:51:54.025+05:30  INFO 37996 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T09:51:54.222+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T09:51:58.326+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T09:52:21.310+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T09:52:24.236+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T09:52:28.340+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T09:52:51.324+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T09:52:54.025+05:30  INFO 37996 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T09:52:54.248+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T09:52:58.351+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T09:53:21.337+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T09:53:24.362+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T09:53:28.363+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T09:53:51.347+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T09:53:54.026+05:30  INFO 37996 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T09:53:57.928+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T09:53:58.375+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T09:54:21.357+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T09:54:27.937+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T09:54:28.388+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T09:54:51.369+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T09:54:54.026+05:30  INFO 37996 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T09:54:57.951+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T09:54:58.402+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T09:55:21.407+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T09:55:27.978+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T09:55:28.430+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T09:55:51.419+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T09:55:54.026+05:30  INFO 37996 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2025-06-06T09:55:58.001+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T09:55:58.456+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T09:56:21.431+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T09:56:28.018+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T09:56:28.467+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T09:56:51.444+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T09:56:53.866+05:30 DEBUG 37996 --- [EUREKA_SERVER] [Eureka-PeerNodesUpdater] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
-2025-06-06T09:56:53.867+05:30  WARN 37996 --- [EUREKA_SERVER] [Eureka-PeerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
-2025-06-06T09:56:54.026+05:30  INFO 37996 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T09:56:58.028+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T09:56:58.478+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T09:57:21.456+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T09:57:28.043+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T09:57:28.491+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T09:57:51.467+05:30 DEBUG 37996 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T09:57:53.027+05:30  INFO 37996 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EUREKA_SERVER with eureka with status DOWN
-2025-06-06T09:57:53.031+05:30  INFO 37996 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-06-06T09:57:53.066+05:30  INFO 37996 --- [EUREKA_SERVER] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-06-06T09:57:53.071+05:30  INFO 37996 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
-2025-06-06T09:57:53.071+05:30  INFO 37996 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
-2025-06-06T09:57:53.071+05:30  INFO 37996 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
-2025-06-06T09:57:53.071+05:30  INFO 37996 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
-2025-06-06T09:57:53.072+05:30  INFO 37996 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
-2025-06-06T09:57:53.073+05:30  INFO 37996 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
-2025-06-06T09:57:53.080+05:30  INFO 37996 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2025-06-06T09:57:53.080+05:30  INFO 37996 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
-2025-06-06T22:42:57.299+05:30  INFO 14712 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : Starting EurekaServerApplication using Java 24 with PID 14712 (D:\SB\Microservice\Ordering_System\eureka-server\eureka-server\target\classes started by admin_sirius in D:\SB\Microservice\Ordering_System\eureka-server\eureka-server)
-2025-06-06T22:42:57.302+05:30 DEBUG 14712 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : Running with Spring Boot v3.5.0, Spring v6.2.7
-2025-06-06T22:42:57.303+05:30  INFO 14712 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : No active profile set, falling back to 1 default profile: "default"
-2025-06-06T22:42:58.808+05:30  INFO 14712 --- [EUREKA_SERVER] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=466c9d9a-5447-3185-92dd-c126b285e2ee
-2025-06-06T22:42:59.359+05:30  INFO 14712 --- [EUREKA_SERVER] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
-2025-06-06T22:42:59.384+05:30  INFO 14712 --- [EUREKA_SERVER] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-06T22:42:59.385+05:30  INFO 14712 --- [EUREKA_SERVER] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-06-06T22:42:59.453+05:30  INFO 14712 --- [EUREKA_SERVER] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-06T22:42:59.454+05:30  INFO 14712 --- [EUREKA_SERVER] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2084 ms
-2025-06-06T22:43:00.069+05:30 DEBUG 14712 --- [EUREKA_SERVER] [main] .c.n.e.s.EurekaServerAutoConfiguration$1 : Filter 'eurekaVersionFilterRegistration' configured for use
-2025-06-06T22:43:00.680+05:30  INFO 14712 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2025-06-06T22:43:00.681+05:30  INFO 14712 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2025-06-06T22:43:01.023+05:30  INFO 14712 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2025-06-06T22:43:01.024+05:30  INFO 14712 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2025-06-06T22:43:01.297+05:30  INFO 14712 --- [EUREKA_SERVER] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2025-06-06T22:43:02.766+05:30  INFO 14712 --- [EUREKA_SERVER] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2025-06-06T22:43:02.794+05:30 DEBUG 14712 --- [EUREKA_SERVER] [main] .n.e.m.DefaultManagementMetadataProvider : Constructed eureka meta-data healthcheckUrl: http://localhost:8761/actuator/health
-2025-06-06T22:43:02.796+05:30 DEBUG 14712 --- [EUREKA_SERVER] [main] .n.e.m.DefaultManagementMetadataProvider : Constructed eureka meta-data statusPageUrl: http://localhost:8761/actuator/info
-2025-06-06T22:43:04.280+05:30  INFO 14712 --- [EUREKA_SERVER] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2025-06-06T22:43:04.363+05:30  WARN 14712 --- [EUREKA_SERVER] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-06-06T22:43:04.385+05:30  INFO 14712 --- [EUREKA_SERVER] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2025-06-06T22:43:04.409+05:30  INFO 14712 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2025-06-06T22:43:04.409+05:30  INFO 14712 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
-2025-06-06T22:43:04.411+05:30  INFO 14712 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749229984409 with initial instances count: 0
-2025-06-06T22:43:04.453+05:30  INFO 14712 --- [EUREKA_SERVER] [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
-2025-06-06T22:43:04.456+05:30 DEBUG 14712 --- [EUREKA_SERVER] [main] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
-2025-06-06T22:43:04.456+05:30  WARN 14712 --- [EUREKA_SERVER] [main] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
-2025-06-06T22:43:04.465+05:30  INFO 14712 --- [EUREKA_SERVER] [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
-2025-06-06T22:43:04.465+05:30  INFO 14712 --- [EUREKA_SERVER] [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
-2025-06-06T22:43:04.479+05:30  INFO 14712 --- [EUREKA_SERVER] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2025-06-06T22:43:04.609+05:30  INFO 14712 --- [EUREKA_SERVER] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA_SERVER with eureka with status UP
-2025-06-06T22:43:04.640+05:30  INFO 14712 --- [EUREKA_SERVER] [Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
-2025-06-06T22:43:04.641+05:30  INFO 14712 --- [EUREKA_SERVER] [Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
-2025-06-06T22:43:04.641+05:30  INFO 14712 --- [EUREKA_SERVER] [Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
-2025-06-06T22:43:04.641+05:30  INFO 14712 --- [EUREKA_SERVER] [Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
-2025-06-06T22:43:04.641+05:30  INFO 14712 --- [EUREKA_SERVER] [Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
-2025-06-06T22:43:04.644+05:30  INFO 14712 --- [EUREKA_SERVER] [Thread-10] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
-2025-06-06T22:43:04.650+05:30  INFO 14712 --- [EUREKA_SERVER] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path '/'
-2025-06-06T22:43:04.651+05:30  INFO 14712 --- [EUREKA_SERVER] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
-2025-06-06T22:43:05.667+05:30  INFO 14712 --- [EUREKA_SERVER] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2025-06-06T22:43:05.700+05:30  INFO 14712 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : Started EurekaServerApplication in 10.201 seconds (process running for 20.136)
-2025-06-06T22:44:04.643+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T22:44:43.243+05:30  INFO 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-06T22:44:43.243+05:30  INFO 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-06T22:44:43.245+05:30  INFO 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-06-06T22:44:43.626+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
-2025-06-06T22:44:43.627+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
-2025-06-06T22:44:43.653+05:30  INFO 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INVENTORY-SERVICE/localhost:INVENTORY-SERVICE:8083 with status UP (replication=false)
-2025-06-06T22:44:43.657+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : registered INVENTORY-SERVICE, vip INVENTORY-SERVICE, leaseDuration 90, isReplication false
-2025-06-06T22:44:50.057+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
-2025-06-06T22:44:50.057+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
-2025-06-06T22:44:50.059+05:30  INFO 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/localhost:ORDER-SERVICE:8081 with status UP (replication=false)
-2025-06-06T22:44:50.059+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : registered ORDER-SERVICE, vip ORDER-SERVICE, leaseDuration 90, isReplication false
-2025-06-06T22:45:04.644+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T22:45:13.474+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:45:19.880+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T22:45:43.485+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:45:49.891+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T22:46:04.647+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
-2025-06-06T22:46:13.496+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:46:19.906+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T22:46:39.546+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
-2025-06-06T22:46:39.547+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
-2025-06-06T22:46:39.547+05:30  INFO 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PAYMENT-SERVICE/localhost:PAYMENT-SERVICE:8084 with status UP (replication=false)
-2025-06-06T22:46:39.547+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : registered PAYMENT-SERVICE, vip PAYMENT-SERVICE, leaseDuration 90, isReplication false
-2025-06-06T22:46:43.509+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:46:49.917+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T22:47:04.648+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T22:47:09.471+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:47:13.523+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:47:19.932+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T22:47:39.481+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:47:43.531+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:47:49.945+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T22:48:04.648+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T22:48:09.491+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:48:13.540+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:48:19.957+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T22:48:39.505+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:48:43.550+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:48:49.970+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T22:49:04.649+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T22:49:09.520+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:49:13.561+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:49:19.981+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T22:49:39.531+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:49:43.571+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:49:49.992+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T22:50:04.649+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T22:50:09.544+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:50:13.581+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:50:20.004+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T22:50:39.555+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:50:43.606+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:50:50.013+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T22:51:04.650+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T22:51:09.565+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:51:13.618+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:51:20.025+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T22:51:39.576+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:51:43.630+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:51:50.035+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T22:52:04.650+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T22:52:09.610+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:52:13.641+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:52:20.043+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T22:52:39.631+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:52:43.652+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:52:50.056+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T22:53:04.457+05:30 DEBUG 14712 --- [EUREKA_SERVER] [Eureka-PeerNodesUpdater] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
-2025-06-06T22:53:04.457+05:30  WARN 14712 --- [EUREKA_SERVER] [Eureka-PeerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
-2025-06-06T22:53:04.662+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 12ms
-2025-06-06T22:53:09.641+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:53:13.665+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:53:20.065+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T22:53:39.654+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:53:43.691+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:53:50.092+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T22:54:04.663+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T22:54:09.690+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:54:13.730+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:54:20.112+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T22:54:39.714+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:54:43.757+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:54:50.150+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T22:55:04.679+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 16ms
-2025-06-06T22:55:09.725+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:55:13.779+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:55:20.167+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T22:55:39.738+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:55:43.786+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:55:50.182+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T22:56:04.680+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T22:56:09.750+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:56:13.797+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:56:20.191+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T22:56:39.761+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:56:43.809+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:56:50.199+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T22:57:04.680+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T22:57:09.768+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:57:13.820+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:57:39.779+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:57:43.828+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:58:04.466+05:30  INFO 14712 --- [EUREKA_SERVER] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
-2025-06-06T22:58:04.680+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T22:58:09.789+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:58:13.840+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:58:39.800+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:58:43.853+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:59:04.681+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T22:59:09.809+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:59:13.864+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T22:59:39.842+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T22:59:43.901+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:00:04.682+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:00:09.859+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:00:13.922+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:00:39.897+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:00:43.933+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:01:04.683+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2025-06-06T23:01:09.924+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:01:13.968+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:01:39.933+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:01:43.979+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:02:04.695+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 12ms
-2025-06-06T23:02:09.945+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:02:13.989+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:02:39.959+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:02:43.998+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:02:53.080+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:03:04.459+05:30 DEBUG 14712 --- [EUREKA_SERVER] [Eureka-PeerNodesUpdater] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
-2025-06-06T23:03:04.461+05:30  WARN 14712 --- [EUREKA_SERVER] [Eureka-PeerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
-2025-06-06T23:03:04.696+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:03:09.969+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:03:14.009+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:03:39.982+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:03:44.020+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:04:04.696+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:04:09.991+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:04:14.028+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:04:40.003+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:04:44.054+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:05:04.697+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:05:10.015+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:05:14.062+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:05:40.024+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:05:44.069+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:06:04.697+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:06:10.035+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:06:14.080+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:06:40.045+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:06:44.088+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:07:04.698+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:07:10.056+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:07:14.097+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:07:40.064+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:07:44.111+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:08:04.698+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:08:10.091+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:08:14.121+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:08:40.099+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:08:44.132+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:09:04.699+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:09:10.110+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:09:14.143+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:09:40.121+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:09:44.153+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:10:04.699+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:10:10.133+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:10:14.162+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:10:40.142+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:10:44.173+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:11:04.701+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2025-06-06T23:11:10.154+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:11:14.184+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:11:40.167+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:11:44.199+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:12:04.701+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:12:10.176+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:12:14.210+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:12:40.186+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:12:44.220+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:13:04.464+05:30 DEBUG 14712 --- [EUREKA_SERVER] [Eureka-PeerNodesUpdater] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
-2025-06-06T23:13:04.464+05:30  WARN 14712 --- [EUREKA_SERVER] [Eureka-PeerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
-2025-06-06T23:13:04.466+05:30  INFO 14712 --- [EUREKA_SERVER] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
-2025-06-06T23:13:04.701+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:13:10.198+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:13:14.230+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:13:40.220+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:13:44.253+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:14:04.701+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:14:10.247+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:14:14.277+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:14:40.272+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:14:44.310+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:15:04.718+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 15ms
-2025-06-06T23:15:10.306+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:15:14.346+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:15:40.341+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:15:44.370+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:16:04.726+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
-2025-06-06T23:16:10.369+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:16:14.394+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:16:40.386+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:16:44.402+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:17:04.727+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2025-06-06T23:17:10.394+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:17:14.411+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:17:40.402+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:17:44.421+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:17:57.944+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:18:04.727+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:18:10.426+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:18:14.458+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:18:40.452+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:18:44.494+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:19:04.728+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:19:10.488+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:19:14.532+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:19:40.506+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:19:44.548+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:20:04.743+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 15ms
-2025-06-06T23:20:10.512+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:20:14.557+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:20:21.802+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:20:40.519+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:20:44.567+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:21:04.744+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:21:10.528+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:21:14.577+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:21:40.538+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:21:44.588+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:22:04.744+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:22:10.546+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:22:14.593+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:22:40.554+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:22:44.601+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:23:04.469+05:30 DEBUG 14712 --- [EUREKA_SERVER] [Eureka-PeerNodesUpdater] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
-2025-06-06T23:23:04.469+05:30  WARN 14712 --- [EUREKA_SERVER] [Eureka-PeerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
-2025-06-06T23:23:04.744+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:23:10.563+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:23:14.613+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:23:40.572+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:23:44.622+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:24:04.744+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:24:10.583+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:24:14.633+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:24:40.593+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:24:44.649+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:25:04.744+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:25:06.428+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:25:10.600+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:25:14.659+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:25:37.278+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:25:40.608+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:25:44.668+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:26:04.746+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2025-06-06T23:26:07.288+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:26:10.630+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:26:14.697+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:26:37.299+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:26:40.640+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:26:44.705+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:27:04.746+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:27:07.308+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:27:10.649+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:27:14.714+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:27:37.318+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:27:40.659+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:27:44.722+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:28:04.466+05:30  INFO 14712 --- [EUREKA_SERVER] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
-2025-06-06T23:28:04.746+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:28:07.327+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:28:10.669+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:28:14.731+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:28:37.339+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:28:40.677+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:28:44.739+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:29:04.747+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:29:07.348+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:29:10.687+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:29:14.747+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:29:37.357+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:29:40.694+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:29:44.754+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:30:04.747+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:30:07.368+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:30:10.703+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:30:14.762+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:30:37.377+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:30:40.710+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:30:44.770+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:31:04.747+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:31:07.387+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:31:10.720+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:31:14.794+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:31:38.516+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:31:40.726+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:31:44.803+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:32:04.747+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:32:10.743+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:32:14.812+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:32:40.752+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:32:42.203+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:32:42.243+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
-2025-06-06T23:32:42.243+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
-2025-06-06T23:32:42.243+05:30  INFO 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/localhost:ORDER-SERVICE:8081 with status DOWN (replication=false)
-2025-06-06T23:32:42.243+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : registered ORDER-SERVICE, vip ORDER-SERVICE, leaseDuration 90, isReplication false
-2025-06-06T23:32:44.822+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:32:45.409+05:30  INFO 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance ORDER-SERVICE/localhost:ORDER-SERVICE:8081 (replication=false)
-2025-06-06T23:32:45.410+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : cancelled ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:32:45.412+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : cancelled ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:33:04.470+05:30 DEBUG 14712 --- [EUREKA_SERVER] [Eureka-PeerNodesUpdater] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
-2025-06-06T23:33:04.470+05:30  WARN 14712 --- [EUREKA_SERVER] [Eureka-PeerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
-2025-06-06T23:33:04.748+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:33:09.882+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
-2025-06-06T23:33:09.882+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
-2025-06-06T23:33:09.882+05:30  INFO 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/localhost:ORDER-SERVICE:8081 with status UP (replication=false)
-2025-06-06T23:33:09.882+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : registered ORDER-SERVICE, vip ORDER-SERVICE, leaseDuration 90, isReplication false
-2025-06-06T23:33:10.760+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:33:14.831+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:33:39.799+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:33:40.769+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:33:44.839+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:34:04.749+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:34:09.809+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:34:10.777+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:34:14.845+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:34:39.819+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:34:40.786+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:34:44.855+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:35:04.749+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:35:09.830+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:35:10.798+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:35:14.859+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:35:39.837+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:35:40.804+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:35:44.867+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:36:04.749+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:36:09.847+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:36:10.813+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:36:14.877+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:36:39.858+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:36:40.825+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:36:44.888+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:37:04.751+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2025-06-06T23:37:09.871+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:37:10.839+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:37:14.897+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:37:39.885+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:37:40.849+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:37:44.908+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:38:04.751+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:38:09.893+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:38:10.858+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:38:14.916+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:38:39.905+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:38:40.867+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:38:44.925+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:39:04.751+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2025-06-06T23:39:09.913+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:39:10.876+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:39:14.934+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:39:39.923+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId localhost:ORDER-SERVICE:8081, isReplication false
-2025-06-06T23:39:40.887+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId localhost:PAYMENT-SERVICE:8084, isReplication false
-2025-06-06T23:39:44.944+05:30 DEBUG 14712 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId localhost:INVENTORY-SERVICE:8083, isReplication false
-2025-06-06T23:40:08.860+05:30  INFO 14712 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4108ms
-2025-06-06T23:40:09.760+05:30  INFO 14712 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EUREKA_SERVER with eureka with status DOWN
-2025-06-06T23:40:09.772+05:30  INFO 14712 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-06-06T23:40:09.811+05:30  INFO 14712 --- [EUREKA_SERVER] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-06-06T23:40:09.816+05:30  INFO 14712 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
-2025-06-06T23:40:09.816+05:30  INFO 14712 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
-2025-06-06T23:40:09.816+05:30  INFO 14712 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
-2025-06-06T23:40:09.817+05:30  INFO 14712 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
-2025-06-06T23:40:09.818+05:30  INFO 14712 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
-2025-06-06T23:40:09.818+05:30  INFO 14712 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
-2025-06-06T23:40:09.850+05:30  INFO 14712 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2025-06-06T23:40:09.851+05:30  INFO 14712 --- [EUREKA_SERVER] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-06-22T12:18:19.258+05:30  INFO 15728 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : Starting EurekaServerApplication using Java 24 with PID 15728 (D:\SB\Microservice\Ordering_System\eureka-server\eureka-server\target\classes started by admin_sirius in D:\SB\Microservice\Ordering_System\eureka-server\eureka-server)
+2025-06-22T12:18:19.268+05:30 DEBUG 15728 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-22T12:18:19.270+05:30  INFO 15728 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-06-22T12:18:21.443+05:30  INFO 15728 --- [EUREKA_SERVER] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=466c9d9a-5447-3185-92dd-c126b285e2ee
+2025-06-22T12:18:22.122+05:30  INFO 15728 --- [EUREKA_SERVER] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+2025-06-22T12:18:22.146+05:30  INFO 15728 --- [EUREKA_SERVER] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-22T12:18:22.147+05:30  INFO 15728 --- [EUREKA_SERVER] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-22T12:18:22.256+05:30  INFO 15728 --- [EUREKA_SERVER] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-22T12:18:22.257+05:30  INFO 15728 --- [EUREKA_SERVER] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2884 ms
+2025-06-22T12:18:23.058+05:30 DEBUG 15728 --- [EUREKA_SERVER] [main] .c.n.e.s.EurekaServerAutoConfiguration$1 : Filter 'eurekaVersionFilterRegistration' configured for use
+2025-06-22T12:18:23.923+05:30  INFO 15728 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2025-06-22T12:18:23.926+05:30  INFO 15728 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2025-06-22T12:18:24.395+05:30  INFO 15728 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2025-06-22T12:18:24.396+05:30  INFO 15728 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2025-06-22T12:18:24.756+05:30  INFO 15728 --- [EUREKA_SERVER] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-06-22T12:18:25.382+05:30 DEBUG 15728 --- [EUREKA_SERVER] [main] .n.e.m.DefaultManagementMetadataProvider : Constructed eureka meta-data healthcheckUrl: http://DESKTOP-LA2D2ND.mshome.net:8761/actuator/health
+2025-06-22T12:18:25.383+05:30 DEBUG 15728 --- [EUREKA_SERVER] [main] .n.e.m.DefaultManagementMetadataProvider : Constructed eureka meta-data statusPageUrl: http://DESKTOP-LA2D2ND.mshome.net:8761/actuator/info
+2025-06-22T12:18:26.127+05:30  WARN 15728 --- [EUREKA_SERVER] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-22T12:18:26.171+05:30  INFO 15728 --- [EUREKA_SERVER] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-22T12:18:26.213+05:30  INFO 15728 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-22T12:18:26.213+05:30  INFO 15728 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2025-06-22T12:18:26.217+05:30  INFO 15728 --- [EUREKA_SERVER] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1750574906215 with initial instances count: 0
+2025-06-22T12:18:26.303+05:30  INFO 15728 --- [EUREKA_SERVER] [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2025-06-22T12:18:26.307+05:30 DEBUG 15728 --- [EUREKA_SERVER] [main] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
+2025-06-22T12:18:26.308+05:30  INFO 15728 --- [EUREKA_SERVER] [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2025-06-22T12:18:26.545+05:30  INFO 15728 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2025-06-22T12:18:26.545+05:30  INFO 15728 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2025-06-22T12:18:26.545+05:30  INFO 15728 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2025-06-22T12:18:26.545+05:30  INFO 15728 --- [EUREKA_SERVER] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2025-06-22T12:18:26.599+05:30  INFO 15728 --- [EUREKA_SERVER] [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2025-06-22T12:18:26.612+05:30  INFO 15728 --- [EUREKA_SERVER] [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2025-06-22T12:18:26.613+05:30  INFO 15728 --- [EUREKA_SERVER] [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2025-06-22T12:18:26.627+05:30  INFO 15728 --- [EUREKA_SERVER] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-06-22T12:18:26.717+05:30  INFO 15728 --- [EUREKA_SERVER] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA_SERVER with eureka with status UP
+2025-06-22T12:18:26.733+05:30  INFO 15728 --- [EUREKA_SERVER] [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2025-06-22T12:18:26.733+05:30  INFO 15728 --- [EUREKA_SERVER] [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2025-06-22T12:18:26.733+05:30  INFO 15728 --- [EUREKA_SERVER] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2025-06-22T12:18:26.733+05:30  INFO 15728 --- [EUREKA_SERVER] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2025-06-22T12:18:26.734+05:30  INFO 15728 --- [EUREKA_SERVER] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2025-06-22T12:18:26.736+05:30  INFO 15728 --- [EUREKA_SERVER] [Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2025-06-22T12:18:26.747+05:30  INFO 15728 --- [EUREKA_SERVER] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path '/'
+2025-06-22T12:18:26.748+05:30  INFO 15728 --- [EUREKA_SERVER] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2025-06-22T12:18:26.791+05:30  INFO 15728 --- [EUREKA_SERVER] [main] c.e.e.EurekaServerApplication            : Started EurekaServerApplication in 8.541 seconds (process running for 18.514)
+2025-06-22T12:18:32.949+05:30  INFO 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-22T12:18:32.950+05:30  INFO 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-22T12:18:32.951+05:30  INFO 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-22T12:18:33.373+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-1] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
+2025-06-22T12:18:33.373+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-1] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
+2025-06-22T12:18:33.388+05:30  INFO 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/DESKTOP-LA2D2ND.mshome.net:ORDER-SERVICE:8081 with status UP (replication=false)
+2025-06-22T12:18:33.392+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : registered ORDER-SERVICE, vip ORDER-SERVICE, leaseDuration 90, isReplication false
+2025-06-22T12:18:34.054+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-3] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 1
+2025-06-22T12:18:34.055+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-3] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
+2025-06-22T12:18:34.057+05:30  INFO 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/DESKTOP-LA2D2ND.mshome.net:ORDER-SERVICE:8081 with status UP (replication=true)
+2025-06-22T12:18:34.057+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : registered ORDER-SERVICE, vip ORDER-SERVICE, leaseDuration 90, isReplication true
+2025-06-22T12:18:34.075+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-1] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T12:18:34.075+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-1] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T12:19:03.210+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:ORDER-SERVICE:8081, isReplication false
+2025-06-22T12:19:03.723+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-6] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T12:19:03.724+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-6] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T12:19:03.724+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:ORDER-SERVICE:8081, isReplication true
+2025-06-22T12:19:03.731+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-1] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T12:19:03.748+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-1] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T12:19:26.735+05:30  INFO 15728 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-06-22T12:19:33.224+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:ORDER-SERVICE:8081, isReplication false
+2025-06-22T12:19:33.734+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-9] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T12:19:33.735+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-9] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T12:19:33.735+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:ORDER-SERVICE:8081, isReplication true
+2025-06-22T12:19:33.738+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-1] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T12:19:33.738+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-1] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T12:19:43.449+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
+2025-06-22T12:19:43.450+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
+2025-06-22T12:19:43.451+05:30  INFO 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INVENTORY-SERVICE/DESKTOP-LA2D2ND.mshome.net:INVENTORY-SERVICE:8083 with status UP (replication=false)
+2025-06-22T12:19:43.452+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : registered INVENTORY-SERVICE, vip INVENTORY-SERVICE, leaseDuration 90, isReplication false
+2025-06-22T12:19:43.970+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-1] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 1
+2025-06-22T12:19:43.970+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-1] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
+2025-06-22T12:19:43.971+05:30  INFO 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INVENTORY-SERVICE/DESKTOP-LA2D2ND.mshome.net:INVENTORY-SERVICE:8083 with status UP (replication=true)
+2025-06-22T12:19:43.971+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : registered INVENTORY-SERVICE, vip INVENTORY-SERVICE, leaseDuration 90, isReplication true
+2025-06-22T12:19:43.976+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-2] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T12:19:43.976+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-2] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T12:20:03.237+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:ORDER-SERVICE:8081, isReplication false
+2025-06-22T12:20:03.750+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-5] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T12:20:03.751+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-5] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T12:20:03.751+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:ORDER-SERVICE:8081, isReplication true
+2025-06-22T12:20:03.753+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-12] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T12:20:03.754+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-12] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T12:20:13.341+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:INVENTORY-SERVICE:8083, isReplication false
+2025-06-22T12:20:13.854+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-8] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T12:20:13.855+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-8] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T12:20:13.855+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:INVENTORY-SERVICE:8083, isReplication true
+2025-06-22T12:20:13.858+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-2] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T12:20:13.858+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-2] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T12:20:26.735+05:30  INFO 15728 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-06-22T12:20:27.734+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-10] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 2
+2025-06-22T12:20:27.734+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-10] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
+2025-06-22T12:20:27.734+05:30  INFO 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PAYMENT-SERVICE/DESKTOP-LA2D2ND.mshome.net:PAYMENT-SERVICE:8086 with status UP (replication=false)
+2025-06-22T12:20:27.734+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : registered PAYMENT-SERVICE, vip PAYMENT-SERVICE, leaseDuration 90, isReplication false
+2025-06-22T12:20:28.245+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 1
+2025-06-22T12:20:28.245+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 9
+2025-06-22T12:20:28.245+05:30  INFO 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PAYMENT-SERVICE/DESKTOP-LA2D2ND.mshome.net:PAYMENT-SERVICE:8086 with status UP (replication=true)
+2025-06-22T12:20:28.245+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : registered PAYMENT-SERVICE, vip PAYMENT-SERVICE, leaseDuration 90, isReplication true
+2025-06-22T12:20:28.247+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-5] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T12:20:28.247+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-5] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T12:20:33.251+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:ORDER-SERVICE:8081, isReplication false
+2025-06-22T12:20:33.768+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-4] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T12:20:33.768+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-4] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T12:20:33.768+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:ORDER-SERVICE:8081, isReplication true
+2025-06-22T12:20:33.771+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-15] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T12:20:33.771+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-15] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T12:20:43.352+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:INVENTORY-SERVICE:8083, isReplication false
+2025-06-22T12:20:43.858+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-7] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T12:20:43.858+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-7] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T12:20:43.859+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:INVENTORY-SERVICE:8083, isReplication true
+2025-06-22T12:20:43.861+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-2] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T12:20:43.862+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-2] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0

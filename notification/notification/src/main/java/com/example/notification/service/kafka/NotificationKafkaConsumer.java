@@ -16,7 +16,7 @@ public class NotificationKafkaConsumer {
         this.hanlder = hanlder;
     }
 
-    @KafkaListener(topics = "notify", groupId = "notify-group")
+    @KafkaListener(topics = "${kafka.topics.notify.request}", groupId = "${kafka.consumer.group.id}")
     public void processNotifyEvent(String msg)
     {
         try {

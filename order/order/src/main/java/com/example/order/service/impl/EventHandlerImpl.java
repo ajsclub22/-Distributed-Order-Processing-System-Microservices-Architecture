@@ -30,24 +30,25 @@ public class EventHandlerImpl implements EventHandler {
 
     @Override
     public void processInventoryEvent(InventoryEvent event) {
-        if(event.getStatus() == InventoryStatus.Reserved) {
-            //sending payment event to the payment service
-            //step 1 : get the Order from the db
-            //step 2 : change the order status as processing
-            //step 3 : send the payment event to the paymnet service
 
-
-            Optional<Order> optional = repo.findById(event.getOrderId());
-            if (optional.isPresent()) {
-                Order order = optional.get();
+        Optional<Order> optional = repo.findById(event.getOrderId());
+        if(optional.isPresent())
+        {
+            Order order = optional.get();
+            if(event.getStatus() == InventoryStatus.Reserved) {
                 order.setStatus(OrderStatus.PROCESSING);
                 repo.save(order);
                 handlePaymentEvent(order);
-                return;
+            }
+            else {
+                order.setStatus(OrderStatus.CANCELLED);
+                repo.save(order);
+                handleNotifiactionEvent(order);
             }
         }
-
-        //else notify the user that order is called
+        else{
+            //logging the order is not present in db
+        }
     }
 
 
@@ -65,12 +66,12 @@ public class EventHandlerImpl implements EventHandler {
             Order order = optional.get();
             if(pEvent.getStatus() == PaymentStatus.SUCCESS) {
                 order.setStatus(OrderStatus.PLACED);
-                handleNotifiactionEvent(order);
             }
             else {
                 order.setStatus(OrderStatus.CANCELLED);
-                //notify the client
             }
+
+            handleNotifiactionEvent(order);
             repo.save(order);
         }
 
@@ -110,11 +111,11 @@ public class EventHandlerImpl implements EventHandler {
         //the appropriate event to the particular service
         String topic = null;
         if(event instanceof InventoryEvent)
-            topic = config.getOrder();
+            topic = config.getInventory().getRequest();
         else if (event instanceof PaymentEvent)
-            topic = config.getPayment();
+            topic = config.getPayment().getRequest();
         else if(event instanceof NotificationEvent)
-            topic = config.getNotify();
+            topic = config.getNotify().getRequest();
 
 
         if(topic != null)

@@ -2,7 +2,6 @@ package com.example.order.service.impl;
 
 import com.example.order.dto.OrderDTO;
 import com.example.order.entities.Order;
-import com.example.order.enums.OrderStatusMessages;
 import com.example.order.service.EventHandler;
 import com.example.order.repo.OrderRepository;
 import com.example.order.service.OrderService;
@@ -10,7 +9,6 @@ import com.example.order.util.OrderUtility;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 @Service

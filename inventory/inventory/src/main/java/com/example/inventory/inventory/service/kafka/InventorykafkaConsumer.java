@@ -15,7 +15,7 @@ public class InventorykafkaConsumer {
         this.handler = handler;
     }
 
-    @KafkaListener(topics = "order-created", groupId = "inventory-group")
+    @KafkaListener(topics = "${kafka.topics.inventory.request}", groupId = "${kafka.groups.inventory}")
     public void processOrderEvent(String eventJson)
     {
         try
@@ -28,7 +28,6 @@ public class InventorykafkaConsumer {
         catch (Exception e)
         {
             e.printStackTrace();
-            System.out.println("in exception");
         }
     }
 }

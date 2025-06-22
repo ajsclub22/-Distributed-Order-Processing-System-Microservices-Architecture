@@ -15,7 +15,7 @@ public class PaymentKafkaConsumer {
         this.handler = handler;
     }
 
-    @KafkaListener(topics = "payment-initiated", groupId = "payment-group")
+    @KafkaListener(topics = "${kafka.topics.payment.request}", groupId = "${kafka.consumer.group.id}")
     public void getPaymentEvent(String event)
     {
         //receive the payment event  from the order service

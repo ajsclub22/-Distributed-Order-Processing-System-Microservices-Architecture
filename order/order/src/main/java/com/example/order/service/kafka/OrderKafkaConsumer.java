@@ -1,5 +1,6 @@
 package com.example.order.service.kafka;
 
+import com.example.order.config.KafkaConfig;
 import com.example.order.events.InventoryEvent;
 import com.example.order.events.PaymentEvent;
 import com.example.order.service.EventHandler;
@@ -13,12 +14,12 @@ public class OrderKafkaConsumer {
 
     private final ObjectMapper mapper;
 
-    public OrderKafkaConsumer(EventHandler handler) {
+    public OrderKafkaConsumer(EventHandler handler, KafkaConfig config) {
         this.handler = handler;
         this.mapper = new ObjectMapper();
     }
 
-    @KafkaListener(topics = "payment-acknowledged", groupId = "order-group")
+    @KafkaListener(topics = "${kafka.topics.payment.response}", groupId = "${kafka.consumer.group.id}")
     public void processPayment(String event) {
         try {
             PaymentEvent pEvent = mapper.readValue(event, PaymentEvent.class);
@@ -30,7 +31,7 @@ public class OrderKafkaConsumer {
         }
     }
 
-    @KafkaListener(topics = "inventory-reserved", groupId = "order-group")
+    @KafkaListener(topics = "${kafka.topics.inventory.response}", groupId = "${kafka.consumer.group.id}")
     public void processInventoryEvent(String event){
         // get the inventory event and process them for further processing
         try {
