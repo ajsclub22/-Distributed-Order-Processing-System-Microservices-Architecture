@@ -2705,3 +2705,72 @@
 2025-06-22T13:27:15.397+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-9] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
 2025-06-22T13:27:15.397+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-9] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
 2025-06-22T13:27:26.827+05:30  INFO 15728 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-06-22T13:27:34.127+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:PAYMENT-SERVICE:8086, isReplication false
+2025-06-22T13:27:34.631+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-3] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T13:27:34.632+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-3] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T13:27:34.632+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:PAYMENT-SERVICE:8086, isReplication true
+2025-06-22T13:27:34.633+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-19] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T13:27:34.633+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-19] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T13:27:39.089+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:ORDER-SERVICE:8081, isReplication false
+2025-06-22T13:27:39.599+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-8] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T13:27:39.599+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-8] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T13:27:39.599+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:ORDER-SERVICE:8081, isReplication true
+2025-06-22T13:27:39.601+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-14] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T13:27:39.601+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-14] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T13:27:44.880+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:INVENTORY-SERVICE:8083, isReplication false
+2025-06-22T13:27:45.392+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-4] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T13:27:45.392+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-4] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T13:27:45.392+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:INVENTORY-SERVICE:8083, isReplication true
+2025-06-22T13:27:45.393+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-9] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T13:27:45.393+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-9] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T13:28:04.136+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:PAYMENT-SERVICE:8086, isReplication false
+2025-06-22T13:28:04.648+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-3] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T13:28:04.648+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-3] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T13:28:04.648+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:PAYMENT-SERVICE:8086, isReplication true
+2025-06-22T13:28:04.649+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-19] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T13:28:04.649+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-19] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T13:28:09.100+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:ORDER-SERVICE:8081, isReplication false
+2025-06-22T13:28:09.611+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-8] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T13:28:09.612+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-8] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T13:28:09.612+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:ORDER-SERVICE:8081, isReplication true
+2025-06-22T13:28:09.613+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-14] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T13:28:09.613+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-14] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T13:28:14.887+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-10] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:INVENTORY-SERVICE:8083, isReplication false
+2025-06-22T13:28:15.390+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-9] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T13:28:15.391+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-9] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T13:28:15.391+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-9] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:INVENTORY-SERVICE:8083, isReplication true
+2025-06-22T13:28:15.392+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-16] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T13:28:15.392+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-16] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T13:28:26.617+05:30 DEBUG 15728 --- [EUREKA_SERVER] [Eureka-PeerNodesUpdater] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
+2025-06-22T13:28:26.827+05:30  INFO 15728 --- [EUREKA_SERVER] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-06-22T13:28:34.145+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:PAYMENT-SERVICE:8086, isReplication false
+2025-06-22T13:28:34.660+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-7] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T13:28:34.660+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-7] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T13:28:34.661+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-7] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:PAYMENT-SERVICE:8086, isReplication true
+2025-06-22T13:28:34.663+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-19] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T13:28:34.663+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-19] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T13:28:39.108+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:ORDER-SERVICE:8081, isReplication false
+2025-06-22T13:28:39.615+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T13:28:39.615+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T13:28:39.615+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:ORDER-SERVICE:8081, isReplication true
+2025-06-22T13:28:39.616+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-14] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T13:28:39.616+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-14] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T13:28:44.894+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:INVENTORY-SERVICE:8083, isReplication false
+2025-06-22T13:28:45.407+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-6] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T13:28:45.407+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-6] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T13:28:45.407+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:INVENTORY-SERVICE:8083, isReplication true
+2025-06-22T13:28:45.408+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-16] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T13:28:45.408+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-16] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T13:29:04.157+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-4] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:PAYMENT-SERVICE:8086, isReplication false
+2025-06-22T13:29:04.661+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-5] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T13:29:04.661+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-5] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T13:29:04.661+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renewed PAYMENT-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:PAYMENT-SERVICE:8086, isReplication true
+2025-06-22T13:29:04.663+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-19] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T13:29:04.663+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-19] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T13:29:09.113+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-3] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:ORDER-SERVICE:8081, isReplication false
+2025-06-22T13:29:09.622+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T13:29:09.622+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-2] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T13:29:09.622+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renewed ORDER-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:ORDER-SERVICE:8081, isReplication true
+2025-06-22T13:29:09.623+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-13] c.n.d.util.DeserializerStringCache       : clearing global-level cache with size 0
+2025-06-22T13:29:09.623+05:30 DEBUG 15728 --- [EUREKA_SERVER] [TaskBatchingWorker-target_localhost-13] c.n.d.util.DeserializerStringCache       : clearing app-level serialization cache with size 0
+2025-06-22T13:29:14.903+05:30 DEBUG 15728 --- [EUREKA_SERVER] [http-nio-8761-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renewed INVENTORY-SERVICE, serverId DESKTOP-LA2D2ND.mshome.net:INVENTORY-SERVICE:8083, isReplication false
